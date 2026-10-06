@@ -1,0 +1,367 @@
+{
+  "brand": {
+    "name": "Guby Rogers",
+    "descriptor": "An education enterprise",
+    "promise": "Guby Rogers turns education ideas into real programmes, platforms, experiences and outcomes.",
+    "tagline": "Build programmes. Create platforms. Deliver outcomes."
+  },
+  "hero": {
+    "badge": "Guby Rogers · Education Enterprise",
+    "headlineLead": "Education doesn't end",
+    "headlineAccent": "at the classroom.",
+    "body": "Guby Rogers helps institutions turn education ideas into real programmes, platforms, experiences and outcomes.",
+    "primaryCta": { "label": "Start a Conversation", "href": "contact.html" },
+    "secondaryCta": { "label": "See What We Do", "href": "#what-we-do" },
+    "status": "pending_revision"
+  },
+  "clients": [],
+  "audiences": [
+    {
+      "title": "Schools & Education Leaders",
+      "items": [
+        "School Promoters & Directors",
+        "Principals & Vice Principals",
+        "Career & School Counsellors",
+        "Academic Heads & Coordinators",
+        "Teachers & Educators"
+      ]
+    },
+    {
+      "title": "Universities & Higher Education Leaders",
+      "items": [
+        "Chancellors & Vice Chancellors",
+        "Deans & Academic Leaders",
+        "Admissions & Outreach Leaders",
+        "Student Success Teams",
+        "International Relations Teams"
+      ]
+    },
+    {
+      "title": "Industry, Government & Global Partners",
+      "items": [
+        "Founders & Business Leaders",
+        "Corporate Partnership & CSR Teams",
+        "Government & Policy Leaders",
+        "International Education Leaders",
+        "Technology & Knowledge Partners"
+      ]
+    }
+  ],
+  "about": {
+    "status": "pending_revision",
+    "eyebrow": "About Guby Rogers",
+    "headline": "An education enterprise built for real outcomes.",
+    "paragraphs": [
+      "Guby Rogers combines strategy, creativity and end-to-end execution across education.",
+      "We build programmes, platforms and experiences with institutions, leaders and partners who want more than recommendations."
+    ],
+    "proposition": "Strategy matched by execution."
+  },
+  "verticals": [
+    {
+      "id": "consulting",
+      "number": "01",
+      "name": "Career & Education Consulting",
+      "positioning": "Building clearer pathways, stronger guidance systems and future-ready career development programmes.",
+      "href": "what-we-do/consulting.html",
+      "who": [
+        "Schools and school leadership teams",
+        "Career counsellors and educators",
+        "Universities and student-success teams",
+        "Education organisations and programme partners"
+      ],
+      "offerings": [
+        "Career Guidance Systems",
+        "Counsellor & Educator Training",
+        "Academic & Career Pathway Design",
+        "Career Development Programmes",
+        "Student Readiness Initiatives",
+        "Guidance Resources & Toolkits"
+      ],
+      "standout": "We connect strategy, programme design, communication and execution so guidance does not remain limited to one-off counselling sessions.",
+      "process": [
+        "Understand the learner context",
+        "Design the pathway",
+        "Equip the people delivering it",
+        "Measure and strengthen outcomes"
+      ],
+      "cta": { "label": "See our consulting work", "href": "work/index.html?v=consulting" },
+      "metrics": [],
+      "clients": [],
+      "quote": null
+    },
+    {
+      "id": "university",
+      "number": "02",
+      "name": "Higher Education & University Development",
+      "positioning": "Helping universities strengthen programmes, positioning, engagement and institutional growth.",
+      "href": "what-we-do/university.html",
+      "who": [
+        "University leadership",
+        "Deans and academic leaders",
+        "Admissions and outreach teams",
+        "Student success and engagement teams",
+        "International relations teams"
+      ],
+      "offerings": [
+        "Institutional Strategy",
+        "Programme Development",
+        "Admissions & Outreach",
+        "Brand Positioning",
+        "Student Engagement",
+        "Digital Communication & Transformation"
+      ],
+      "standout": "We understand both institutional strategy and audience behaviour, allowing us to move from boardroom direction to programmes and communication that work on the ground.",
+      "process": [
+        "Diagnose the institution",
+        "Identify growth opportunities",
+        "Build and execute solutions",
+        "Track institutional and audience outcomes"
+      ],
+      "cta": { "label": "Explore university solutions", "href": "work/index.html?v=university" },
+      "metrics": [],
+      "clients": [],
+      "quote": null
+    },
+    {
+      "id": "events",
+      "number": "03",
+      "name": "Events & Experiences",
+      "positioning": "Creating high-impact platforms that bring education, industry, ideas and communities together.",
+      "href": "what-we-do/events.html",
+      "who": [
+        "Universities and education institutions",
+        "Corporate and CSR partners",
+        "Government and ecosystem organisations",
+        "School communities and education professionals"
+      ],
+      "offerings": [
+        "Conferences & Summits",
+        "Education Expos",
+        "Innovation Challenges",
+        "Curated Learning Experiences",
+        "Partner-Led Platforms",
+        "End-to-End Event Strategy & Execution"
+      ],
+      "standout": "We do not treat events as isolated dates. We design platforms with a clear audience, strong content, partner value, distinctive experiences and measurable outcomes.",
+      "process": [
+        "Define the purpose",
+        "Build the platform",
+        "Mobilise audiences and partners",
+        "Deliver, document and scale"
+      ],
+      "cta": { "label": "Explore events & experiences", "href": "work/bic.html" },
+      "metrics": [
+        {
+          "value": "18,000+",
+          "label": "Schools reached",
+          "source": "Bharat Innovation Challenge · Season 1",
+          "verified": true
+        },
+        {
+          "value": "10,000+",
+          "label": "Student applications",
+          "source": "Bharat Innovation Challenge · Season 1",
+          "verified": true
+        },
+        {
+          "value": "2,600+",
+          "label": "Teams registered",
+          "source": "Bharat Innovation Challenge · Season 1",
+          "verified": true
+        }
+      ],
+      "clients": [],
+      "quote": null
+    },
+    {
+      "id": "immersion",
+      "number": "04",
+      "name": "Global Immersion",
+      "positioning": "Designing international learning journeys that take education beyond classrooms and borders.",
+      "href": "what-we-do/immersion.html",
+      "who": [
+        "Schools and universities",
+        "Students participating through partner institutions",
+        "Education leaders and faculty groups",
+        "International universities and industry hosts"
+      ],
+      "offerings": [
+        "International Study Tours",
+        "University Immersions",
+        "Industry Exposure",
+        "Cultural Learning Experiences",
+        "Faculty & Leadership Delegations",
+        "Custom Global Learning Itineraries"
+      ],
+      "standout": "Every journey is built around learning outcomes, structured exposure and meaningful reflection, not tourism alone.",
+      "process": [
+        "Define learning goals",
+        "Curate institutions and experiences",
+        "Manage the journey",
+        "Capture learning and outcomes"
+      ],
+      "scopeNote": "Global Immersion covers structured study tours and exposure programmes. It is not overseas admissions consulting.",
+      "cta": { "label": "Explore global programmes", "href": "work/index.html?v=immersion" },
+      "metrics": [],
+      "clients": [],
+      "quote": null
+    }
+  ],
+  "projects": [
+    {
+      "slug": "instaconfluence",
+      "title": "InstaConfluence",
+      "type": "Events / Creator Summit",
+      "vertical": "events",
+      "verticalLabel": "Events & Experiences",
+      "shortSummary": "18 creators. One campus. Stories that travelled far beyond the stage.",
+      "featured": true,
+      "published": true,
+      "year": "2024",
+      "href": "/work/instaconfluence.html"
+    },
+    {
+      "slug": "bic",
+      "title": "Bharat Innovation Challenge",
+      "type": "Innovation Challenge",
+      "vertical": "events",
+      "verticalLabel": "Events & Experiences",
+      "shortSummary": "A national innovation platform connecting schools, students and opportunity.",
+      "featured": true,
+      "published": true,
+      "year": "Season 1",
+      "href": "work/bic.html",
+      "metrics": [
+        { "value": "18,000+", "label": "Schools reached", "verified": true },
+        { "value": "10,000+", "label": "Applications", "verified": true },
+        { "value": "2,600+", "label": "Teams", "verified": true },
+        { "value": "35 Lakh+", "label": "Digital views", "verified": true }
+      ]
+    },
+    {
+      "slug": "eil",
+      "title": "EIL Conference",
+      "type": "Conference",
+      "vertical": "events",
+      "verticalLabel": "Events & Experiences",
+      "shortSummary": "A national conference for education leaders, counsellors and experts shaping student success.",
+      "featured": true,
+      "published": true,
+      "year": "2026",
+      "href": "work/eil.html",
+      "metrics": []
+    },
+    {
+      "slug": "university-transformation",
+      "title": "University Transformation",
+      "type": "Institutional Programme",
+      "vertical": "university",
+      "verticalLabel": "Higher Education & University Development",
+      "shortSummary": "Institutional strategy, programmes and engagement work with university partners.",
+      "featured": true,
+      "published": true,
+      "year": null,
+      "href": "work/university-transformation.html",
+      "metrics": []
+    }
+  ],
+  "impact": {
+    "eyebrow": "Impact in action",
+    "headline": "Ideas are only valuable when they create outcomes.",
+    "sourceLabel": "Bharat Innovation Challenge · Season 1 Impact",
+    "closing": "From national reach to real opportunities, we build initiatives designed to move beyond participation and create measurable impact.",
+    "metrics": [
+      { "value": "18,000+", "label": "Schools Reached" },
+      { "value": "10,000+", "label": "Student Applications" },
+      { "value": "2,600+", "label": "Teams Registered" },
+      { "value": "500+", "label": "Cities Represented" },
+      { "value": "28", "label": "States Represented" },
+      { "value": "60+", "label": "Working Prototypes Showcased" },
+      { "value": "8", "label": "Investment Offers Generated" },
+      { "value": "35 Lakh+", "label": "Digital Views" }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "headline": "From the first question to the final outcome.",
+    "lead": "We combine strategic thinking, creative problem-solving and on-ground execution through one connected process.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Understand",
+        "body": "We study the context, identify the real problem and define what success should look like."
+      },
+      {
+        "number": "02",
+        "title": "Strategise",
+        "body": "We build a clear direction around the audience, opportunity and desired outcomes."
+      },
+      {
+        "number": "03",
+        "title": "Create & Execute",
+        "body": "We develop the solution, bring the right people together and manage delivery end to end."
+      },
+      {
+        "number": "04",
+        "title": "Measure & Evolve",
+        "body": "We evaluate outcomes, capture learnings and strengthen the initiative for its next stage."
+      }
+    ],
+    "closing": "One team. One connected process. Complete ownership."
+  },
+  "founder": {
+    "eyebrow": "Founder's note",
+    "headline": "Education needs more than good ideas. It needs people who can make them happen.",
+    "paragraphs": [
+      "Guby Rogers began with a simple belief: meaningful change in education happens when strategy is matched by execution.",
+      "That is why we do more than recommend possibilities. We build programmes, create platforms, bring the right people together and remain involved until the idea becomes a real outcome.",
+      "Across every project, our ambition remains the same: to create work that strengthens institutions, expands opportunities and moves education forward."
+    ],
+    "name": "Daksh Sethi",
+    "role": "Founder, Guby Rogers"
+  },
+  "testimonials": [],
+  "insights": [
+    {
+      "category": "Higher Education",
+      "title": "Why Student Success Must Begin Before Enrolment",
+      "slug": "student-success-before-enrolment",
+      "published": false
+    },
+    {
+      "category": "Careers & Guidance",
+      "title": "Career Guidance Is No Longer a Counselling-Room Conversation",
+      "slug": "career-guidance-beyond-counselling",
+      "published": false
+    },
+    {
+      "category": "Events & Experiences",
+      "title": "What Turns an Education Event Into a Platform for Impact?",
+      "slug": "education-event-to-platform",
+      "published": false
+    }
+  ],
+  "contact": {
+    "headline": "Let's talk.",
+    "lead": "Have an idea, project or opportunity in mind? Get in touch.",
+    "phone": null,
+    "whatsapp": null,
+    "email": null,
+    "address": null,
+    "linkedin": null,
+    "instagram": null,
+    "youtube": null
+  },
+  "story": {
+    "status": "pending_data",
+    "valueThemes": [
+      "Ownership",
+      "Clarity",
+      "Creativity with Purpose",
+      "Execution",
+      "Real-World Impact",
+      "Partnership"
+    ]
+  }
+}

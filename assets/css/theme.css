@@ -1,0 +1,360 @@
+/* =========================================================
+   EIL CONFERENCE 2026 — TAILWIND THEME
+   Display: Fraunces (variable, opsz + SOFT + WONK axes)
+   Body:    Inter (variable 400–800)
+   Data:    IBM Plex Mono (tabular figures)
+   ========================================================= */
+
+@theme {
+  /* ---------- Palette ---------- */
+  --color-navy: #0E1A2B;
+  --color-navy-700: #16233A;
+  --color-navy-600: #1E2E48;
+  --color-gold: #D4A853;
+  --color-gold-light: #EAC97D;
+  --color-coral: #E8637A;
+  --color-coral-deep: #C94B62;
+  --color-violet: #6D28D9;
+  --color-violet-light: #A78BFA;
+  --color-pink: #EC4899;
+  --color-pink-light: #F472B6;
+  --color-cream: #F6F1E6;
+  --color-paper: #FFFDF9;
+  --color-ink: #171E2B;
+  --color-ink-soft: #4B5468;
+  --color-positive: #3E8E5C;
+  --color-line: rgba(23,30,43,0.10);
+  --color-line-dark: rgba(246,241,230,0.12);
+  --color-line-warm: rgba(212,168,83,0.28);
+
+  /* ---------- Layered, warm-toned shadows (premium pass) ---------- */
+  --shadow-warm-sm: 0 1px 2px rgba(14,26,43,0.05), 0 16px 36px -20px rgba(14,26,43,0.16);
+  --shadow-warm-md: 0 4px 10px rgba(14,26,43,0.06), 0 30px 54px -24px rgba(14,26,43,0.22);
+  --shadow-warm-dark: 0 24px 60px -20px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.04) inset;
+
+  /* ---------- Families ---------- */
+  --font-sans:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display:'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-mono:'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-syne:'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* ---------- Type scale ----------
+     Fluid steps interpolate between a 360px and a 1280px viewport, and each
+     step carries its own leading and tracking so markup rarely has to. */
+  --text-3xs:0.625rem;
+  --text-3xs--line-height:1.4;
+  --text-2xs:0.6875rem;
+  --text-2xs--line-height:1.4;
+  --text-xs:0.75rem;
+  --text-xs--line-height:1.45;
+  --text-sm:0.8125rem;
+  --text-sm--line-height:1.55;
+  --text-base:0.875rem;
+  --text-base--line-height:1.55;
+  --text-base--letter-spacing:-0.006em;
+  --text-md:clamp(0.9375rem, 0.91rem + 0.11vw, 1rem);
+  --text-md--line-height:1.5;
+  --text-md--letter-spacing:-0.006em;
+  --text-body:clamp(1rem, 0.97rem + 0.11vw, 1.0625rem);
+  --text-body--line-height:1.62;
+  --text-body--letter-spacing:-0.006em;
+  --text-lg:clamp(1.0625rem, 1rem + 0.22vw, 1.1875rem);
+  --text-lg--line-height:1.58;
+  --text-lg--letter-spacing:-0.006em;
+  --text-xl:clamp(1.1875rem, 1.11rem + 0.22vw, 1.3125rem);
+  --text-xl--line-height:1.3;
+  --text-xl--letter-spacing:-0.012em;
+  --text-2xl:clamp(1.375rem, 1.24rem + 0.33vw, 1.5625rem);
+  --text-2xl--line-height:1.24;
+  --text-2xl--letter-spacing:-0.012em;
+  --text-3xl:clamp(1.625rem, 1.35rem + 1.09vw, 2.25rem);
+  --text-3xl--line-height:1.15;
+  --text-3xl--letter-spacing:-0.02em;
+  --text-4xl:clamp(1.75rem, 1.28rem + 1.85vw, 2.75rem);
+  --text-4xl--line-height:1.1;
+  --text-4xl--letter-spacing:-0.022em;
+  --text-5xl:clamp(2.125rem, 1.46rem + 2.61vw, 3.625rem);
+  --text-5xl--line-height:1.06;
+  --text-5xl--letter-spacing:-0.022em;
+  --text-6xl:clamp(2.5rem, 1.52rem + 3.8vw, 4.375rem);
+  --text-6xl--line-height:1.04;
+  --text-6xl--letter-spacing:-0.024em;
+
+  /* ---------- Tracking ---------- */
+  --tracking-tight:-0.012em;
+  --tracking-wide:0.06em;
+  --tracking-caps:0.12em;
+  --tracking-eyebrow:0.14em;
+
+  /* ---------- Radii, shadows, container ---------- */
+  --radius-card:26px;
+  --radius-panel:16px;
+  --radius-field:10px;
+  --shadow-card:0 10px 30px -12px rgba(14,26,43,0.14);
+  --shadow-lift:0 30px 70px -25px rgba(0,0,0,0.5);
+  --shadow-gold:0 12px 24px -10px rgba(212,168,83,0.55);
+  --shadow-nav:0 1px 0 rgba(212,168,83,0.06), 0 24px 48px -32px rgba(0,0,0,0.45);
+  --shadow-menu:0 28px 56px -28px rgba(0,0,0,0.5);
+  --shadow-hero:0 24px 60px -20px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.04) inset,
+                0 16px 38px -20px rgba(212,168,83,0.2);
+  --shadow-logo:0 6px 16px -6px rgba(212,168,83,0.55), inset 0 1px 0 rgba(255,255,255,0.3);
+  --shadow-logo-lift:0 8px 20px -6px rgba(212,168,83,0.65), inset 0 1px 0 rgba(255,255,255,0.35);
+  --shadow-cta:0 16px 36px -16px rgba(212,168,83,0.5), 0 4px 10px -4px rgba(0,0,0,0.3);
+  --shadow-cta-ghost:0 10px 26px -16px rgba(212,168,83,0.4);
+  --shadow-tag:0 4px 12px -4px rgba(0,0,0,0.35);
+  --shadow-plan:0 24px 60px -20px rgba(0,0,0,0.5);
+  --shadow-badge:0 10px 24px -8px rgba(212,168,83,0.55), 0 0 0 4px var(--color-paper);
+  --shadow-chip:0 10px 22px -14px rgba(14,26,43,0.22);
+
+  /* Overshoot curve shared by every card lift. */
+  --ease-lift:cubic-bezier(.22,1,.36,1);
+  --container-page:1180px;
+}
+
+/* The browser build compiles from classes it can see in the markup, so any
+   utility that only ever arrives via JS has to be declared here. */
+@source inline("grid-rows-[1fr] rotate-45 flex");
+
+@layer base {
+  body{
+    /* cv05 = l with a tail, cv08 = disambiguated uppercase i — both reduce
+       1/l/I confusion in dates, times and venue names. */
+    font-feature-settings:'cv05' 1, 'cv08' 1;
+  }
+  h1, h2, h3, h4{ font-optical-sizing:auto; }
+  /* SOFT rounds the terminals; WONK swaps in Fraunces' editorial alternates.
+     Reserved for the two largest levels — at small sizes they read as noise. */
+  h1, h2{ font-variation-settings:'SOFT' 18, 'WONK' 1; }
+  h3, h4{ font-variation-settings:'SOFT' 12, 'WONK' 0; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{
+      animation-duration:0.001ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:0.001ms !important;
+      scroll-behavior:auto !important;
+    }
+  }
+}
+
+/* Component classes cover the patterns that repeat across the page; everything
+   else is composed with utilities in the markup. Raw declarations appear only
+   where Tailwind has no equivalent: variable-font axes, vendor-prefixed
+   properties, and the @supports fallback for gradient-filled text.
+
+   Hover styling is written with plain `hover:` variants — Tailwind v4 already
+   scopes those to `@media (hover:hover)`, so a tap never leaves a card stuck
+   in its lifted state. */
+@layer components {
+  .shell{ @apply mx-auto w-full max-w-page px-[22px] md:px-8; }
+
+  .display-italic{
+    @apply font-display italic;
+    font-variation-settings:'SOFT' 30, 'WONK' 1;
+  }
+
+  .eyebrow{
+    @apply mb-[18px] inline-flex items-center gap-2.5 font-mono text-xs font-medium
+           uppercase tracking-eyebrow;
+  }
+  .eyebrow::before{ @apply inline-block h-px w-[22px] bg-current content-['']; }
+
+  .label{ @apply font-mono text-2xs font-medium uppercase tracking-caps; }
+
+  /* ---------- Badges: reusable pill label, color variants ---------- */
+  .badge{
+    @apply inline-flex items-center gap-2.5 rounded-full border bg-white/80 px-4 py-[7px]
+           font-mono text-2xs font-semibold uppercase tracking-caps
+           shadow-[0_2px_10px_-4px_rgba(23,30,43,0.08)] backdrop-blur-sm;
+  }
+  .badge-dot{
+    @apply relative inline-flex size-[7px] shrink-0 rounded-full;
+    animation: badge-dot-core 2s ease-in-out infinite;
+  }
+  .badge-dot::before{
+    content:'';
+    @apply absolute -inset-[5px] rounded-full bg-current opacity-60;
+    animation: badge-dot-ping 2s ease-out infinite;
+  }
+  @keyframes badge-dot-core{ 0%,100%{ opacity:1; } 50%{ opacity:0.7; } }
+  @keyframes badge-dot-ping{
+    0%{ transform:scale(0.4); opacity:0.5; }
+    100%{ transform:scale(1.9); opacity:0; }
+  }
+  .badge-violet{ @apply border-violet/25 text-violet; }
+  .badge-violet .badge-dot{ @apply bg-violet; }
+  .badge-pink{ @apply border-pink/25 text-pink; }
+  .badge-pink .badge-dot{ @apply bg-pink; }
+  .badge-neutral{ @apply border-line text-ink-soft; }
+  .badge-neutral .badge-dot{ @apply bg-ink-soft; }
+  .badge-dark{ @apply border-white/20 bg-white/10 text-white backdrop-blur-md; }
+  .badge-dark .badge-dot{ @apply bg-white; }
+
+  /* Gradient-filled text. Tailwind handles the clip and the transparent fill;
+     the @supports guard and -webkit fallback keep solid gold on engines that
+     cannot clip a background to glyphs. */
+  .text-gold-foil{ color:var(--color-gold-light); }
+  @supports ((-webkit-background-clip:text) or (background-clip:text)){
+    .text-gold-foil{
+      @apply bg-linear-[115deg,#F3D99B_0%,var(--color-gold)_32%,var(--color-gold-light)_58%,#F8ECC2_100%]
+             bg-clip-text text-transparent;
+      -webkit-text-fill-color:transparent;
+    }
+  }
+
+  /* Saazai-reference gradient: pink into violet, used for the hero's
+     restyled light-mode section (see nav/hero markup). */
+  .text-gradient-brand{ color:var(--color-violet); }
+  @supports ((-webkit-background-clip:text) or (background-clip:text)){
+    .text-gradient-brand{
+      @apply bg-linear-[135deg,var(--color-pink-light)_0%,#C084FC_50%,var(--color-violet)_100%]
+             bg-clip-text text-transparent;
+      -webkit-text-fill-color:transparent;
+    }
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-xl
+           border border-transparent px-7 py-[15px] text-base font-semibold leading-tight
+           transition duration-200 ease-out;
+  }
+  .btn-sm{ @apply px-5 py-[11px] text-sm; }
+  .btn-block{ @apply w-full; }
+  .btn-primary{ @apply bg-gold text-navy hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-gold; }
+  .btn-ghost-dark{ @apply border-cream/35 text-cream hover:-translate-y-0.5 hover:border-cream hover:bg-cream/10; }
+  .btn-ghost-light{ @apply border-ink/20 text-ink hover:-translate-y-0.5 hover:border-ink hover:bg-ink/5; }
+  /* Saazai-reference primary button — light-mode sections only. */
+  .btn-violet{
+    @apply bg-violet text-white shadow-[0_16px_32px_-16px_rgba(109,40,217,0.5)]
+           hover:-translate-y-0.5 hover:bg-violet-light hover:shadow-[0_20px_40px_-16px_rgba(109,40,217,0.55)];
+  }
+  /* A light sweep crosses the face on hover — reserved for the hero CTA. */
+  .btn-shine{
+    @apply relative overflow-hidden shadow-cta
+           before:absolute before:inset-0 before:-translate-x-[130%]
+           before:bg-linear-[120deg,transparent_30%,rgba(255,255,255,0.55)_50%,transparent_70%]
+           before:transition-transform before:duration-700 before:ease-out before:content-['']
+           hover:before:translate-x-[130%];
+  }
+
+  /* ---------- Cards ---------- */
+  .card{ @apply rounded-card border border-line bg-paper p-[34px] shadow-card; }
+  .card-dark{ @apply rounded-card border border-line-warm bg-navy-700 p-[34px] shadow-warm-dark; }
+  /* Opt-in hover lift, added alongside .card. */
+  .card-lift{
+    @apply shadow-warm-sm transition duration-[400ms] ease-lift
+           hover:-translate-y-1 hover:border-line-warm hover:shadow-warm-md;
+  }
+
+  .pill{
+    @apply inline-flex items-center gap-2 rounded-full border border-line bg-paper
+           px-[18px] py-[9px] text-sm font-medium text-ink;
+  }
+  .dot{ @apply size-1.5 shrink-0 rounded-full bg-coral; }
+
+  .stat-card{
+    @apply relative rounded-panel border border-line bg-paper px-[26px] py-7 shadow-warm-sm
+           transition duration-[400ms] ease-lift
+           before:absolute before:inset-x-[26px] before:top-0 before:h-px before:origin-center
+           before:scale-x-[0.7] before:bg-linear-to-r before:from-transparent before:via-gold/60
+           before:to-transparent before:opacity-0 before:transition before:duration-[400ms]
+           before:content-[''] hover:-translate-y-[5px] hover:border-line-warm
+           hover:shadow-warm-md hover:before:scale-x-100 hover:before:opacity-100;
+  }
+  .stat-num{
+    @apply mb-3 font-mono text-4xl font-semibold leading-none tabular-nums
+           tracking-[-0.035em] text-coral-deep
+           after:mt-0.5 after:block after:h-0.5 after:w-[26px] after:rounded-sm
+           after:bg-linear-to-r after:from-gold after:to-gold-light after:content-[''];
+  }
+  .stat-label{ @apply mb-1.5 text-base font-semibold leading-snug text-balance text-ink; }
+  .stat-sub{ @apply text-sm text-ink-soft; }
+  .stat-source{
+    @apply mt-4 border-t border-line pt-3.5 font-mono text-3xs uppercase
+           tracking-caps text-ink/45;
+  }
+
+  /* ---------- Schedule ---------- */
+  .day-card{
+    @apply shadow-warm-sm transition duration-[400ms] ease-lift
+           hover:-translate-y-[3px] hover:border-line-warm hover:shadow-warm-md;
+  }
+  .day-head{
+    @apply relative bg-linear-[135deg,var(--color-navy),var(--color-navy-700)]
+           after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-linear-to-r
+           after:from-gold after:to-transparent after:to-75% after:content-[''];
+  }
+  .slot{
+    /* 82px keeps a full "16:30–17:30" on one line at the mono size below. */
+    @apply -mx-3 grid grid-cols-[82px_1fr] gap-[18px] rounded-lg border-b border-line
+           px-3 py-[18px] transition-colors duration-300 last:border-b-0
+           hover:bg-gold/[0.06] sm:grid-cols-[92px_1fr];
+  }
+  .slot-time{ @apply pt-[3px] font-mono text-xs font-semibold tabular-nums text-coral-deep; }
+  .slot-title{ @apply mb-1 font-display text-md font-medium leading-snug tracking-tight text-balance text-ink; }
+  .slot-desc{ @apply text-sm text-ink-soft; }
+
+  /* ---------- Speakers & schools ---------- */
+  .speaker-card{
+    @apply shadow-warm-sm transition duration-[400ms] ease-lift
+           hover:-translate-y-[5px] hover:border-line-warm hover:shadow-warm-md;
+  }
+  .speaker-photo{ @apply transition-transform duration-500 ease-lift group-hover:scale-105; }
+  .speaker-tag{ @apply shadow-tag; }
+
+  .school-tag{
+    @apply flex items-center gap-2 rounded-field border border-line px-4 py-3 text-sm text-ink
+           transition duration-300 ease-lift hover:-translate-y-0.5 hover:border-line-warm
+           hover:bg-paper hover:shadow-chip;
+  }
+
+  /* ---------- Pricing ---------- */
+  .plan-wrap{ @apply transition-transform duration-[400ms] ease-lift hover:-translate-y-1.5; }
+  .plan{
+    @apply relative shadow-warm-sm transition duration-[400ms] ease-lift
+           group-hover:border-line-warm group-hover:shadow-warm-md;
+  }
+  .plan-badge{ @apply tracking-[0.14em] shadow-badge; }
+  .plan-feature{ @apply flex items-start gap-2.5 text-base; }
+
+  /* ---------- Forms ---------- */
+  .field-label{ @apply mb-2 block text-xs font-semibold tracking-[0.02em] text-ink; }
+  .field{
+    @apply w-full rounded-field border border-line bg-paper px-4 py-3.5 text-base text-ink
+           placeholder:text-ink/40 focus:border-ink/35 focus:outline-none;
+  }
+
+  /* ---------- Nav (restyled to the Saazai-reference light palette) ---------- */
+  .nav-link{
+    @apply relative py-0.5 text-base font-medium text-ink/60 transition-colors hover:text-ink
+           after:absolute after:inset-x-0 after:-bottom-2 after:h-px after:origin-left
+           after:scale-x-0 after:bg-linear-to-r after:from-pink-light after:to-violet
+           after:transition-transform after:duration-300 after:ease-in-out after:content-['']
+           hover:after:scale-x-100;
+  }
+  .nav-link.is-active{ @apply text-ink after:scale-x-100; }
+
+  .nav-toggle{ @apply cursor-pointer rounded-[10px] transition-colors duration-200 hover:bg-ink/6; }
+  .nav-toggle span{ @apply transition duration-[250ms] ease-out; }
+
+  .logo-mark{
+    @apply shadow-[0_6px_16px_-6px_rgba(109,40,217,0.45),inset_0_1px_0_rgba(255,255,255,0.3)]
+           transition duration-300 ease-out
+           group-hover:-translate-y-px group-hover:-rotate-2
+           group-hover:shadow-[0_8px_20px_-6px_rgba(109,40,217,0.55),inset_0_1px_0_rgba(255,255,255,0.35)];
+  }
+
+  /* ---------- Partner strip & countdown (hero: Saazai-reference light palette) ---------- */
+  .partner-item{ @apply opacity-[0.92] transition-opacity duration-300 hover:opacity-100; }
+  .partner-name{ @apply transition-colors duration-300 group-hover:text-violet; }
+
+  .countdown-cell{
+    @apply relative flex-1 px-1
+           before:absolute before:top-0.5 before:bottom-4 before:left-0 before:w-px
+           before:bg-linear-to-b before:from-transparent before:via-violet/[0.25]
+           before:to-transparent before:content-[''] first:before:hidden;
+  }
+
+  .footer-link{ @apply block py-[7px] text-base text-cream/60 transition-colors hover:text-cream; }
+}

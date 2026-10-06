@@ -3,14 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bharat Innovation Challenge — Guby Rogers</title>
-<meta name="description" content="A national innovation platform connecting schools, students and opportunity at scale.">
+<title>Bharat Innovation Challenge, Season 1 | Guby Rogers</title>
+<meta name="description" content="2,600+ teams. 28 states. One national stage for new ideas. Season 1 of Bharat Innovation Challenge, organised and hosted by Lovely Professional University.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyByeD0nMTYnIGZpbGw9JyM2RDI4RDknLz48dGV4dCB4PSczMicgeT0nNDInIGZvbnQtZmFtaWx5PSdNZW5sbycgZm9udC13ZWlnaHQ9JzcwMCcgZm9udC1zaXplPScyMCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPkdSPC90ZXh0Pjwvc3ZnPg==">
 <style>
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+
+.cs-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 4px;
+}
+.cs-highlights span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(147,51,234,0.18);
+  background: rgba(147,51,234,0.06);
+  color: #4C1D95;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 11px;
+}
+.cs-voice {
+  margin-top: 14px;
+  padding: 16px 16px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 22px -20px rgba(23,30,43,0.28);
+}
+.cs-voice .badge { margin-bottom: 8px; }
+.cs-voice blockquote {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--color-ink);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.cs-voice cite {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+.cs-partners {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.cs-partner {
+  margin: 0;
+  padding: 10px 8px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  text-align: center;
+  min-width: 0;
+}
+.cs-partner img {
+  width: 100%;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+.cs-partner span {
+  display: block;
+  margin-top: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(10,10,10,0.48);
+}
+.cs-jury {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.cs-jury article {
+  margin: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  overflow: hidden;
+  min-width: 0;
+}
+.cs-jury img {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+  background: #EDE9FE;
+}
+.cs-jury h4 {
+  margin: 8px 10px 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.cs-jury p {
+  margin: 2px 10px 10px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--color-ink-soft);
+}
+.cs-footprint {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.cs-footprint p {
+  margin: 0;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(147,51,234,0.16);
+  background: rgba(147,51,234,0.05);
+}
+.cs-footprint b {
+  display: block;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+}
+.cs-footprint span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: rgba(10,10,10,0.5);
+}
+.cs-voices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.cs-bic-photos.cs-ic-media .cs-dual-col {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  display: block;
+}
+.cs-bic-photos .cs-dual-shot {
+  aspect-ratio: 4 / 3;
+  height: auto;
+}
+.cs-bic-page .cs-side-panel.is-sticky {
+  overflow: visible;
+  max-height: none;
+}
+.cs-bic-page .cs-ic-stat {
+  padding: 7px 8px 8px;
+}
+.cs-bic-page .cs-ic-stat b { font-size: 0.98rem; }
+.cs-bic-page .cs-ic-stat span { font-size: 9.5px; }
+@media (max-width: 900px) {
+  .cs-partners { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cs-jury { grid-template-columns: 1fr 1fr 1fr; }
+  .cs-footprint { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .cs-partners, .cs-jury { grid-template-columns: 1fr 1fr; }
+  .cs-bic-photos.cs-ic-media .cs-dual-col {
+    flex-basis: calc((100cqi - 6px) / 1.2);
+  }
+}
+
 </style>
 <style type="text/tailwindcss">
 /* =========================================================
@@ -2370,19 +2537,23 @@
     radial-gradient(ellipse 80% 70% at 50% 0%, rgba(147,51,234,0.42), transparent 55%),
     radial-gradient(ellipse 50% 45% at 90% 80%, rgba(37,99,235,0.28), transparent 50%),
     linear-gradient(165deg, #12081F 0%, #0B0B14 50%, #07070C 100%);
-  padding: 96px 0 28px;
+  padding: 96px 0 36px;
   color: #fff;
 }
 .cs-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 24px;
-  align-items: end;
+  gap: 28px;
+  align-items: center;
 }
 @media (max-width: 860px) {
   .cs-hero-grid { grid-template-columns: 1fr; }
 }
-.cs-hero-copy { min-width: 0; }
+.cs-hero-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
 .cs-hero-media {
   margin: 0;
   border-radius: 16px;
@@ -2407,7 +2578,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px 16px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .cs-back {
   display: inline-flex;
@@ -2447,7 +2618,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .cs-meta span {
   display: inline-flex;
@@ -2476,13 +2647,6 @@
   border-bottom: 1px solid rgba(10,10,10,0.06);
   padding: 0;
 }
-.cs-hero .cs-metrics {
-  background: transparent;
-  border: 0;
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
 .cs-metrics ul {
   list-style: none;
   margin: 0;
@@ -2491,31 +2655,12 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
 }
-@media (max-width: 800px) {
-  .cs-metrics ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 .cs-metrics li {
   padding: 14px 14px 15px;
   text-align: center;
   border-right: 1px solid rgba(10,10,10,0.06);
 }
-.cs-hero .cs-metrics li {
-  padding: 4px 12px 2px;
-  border-right: 1px solid rgba(255,255,255,0.1);
-  text-align: left;
-}
 .cs-metrics li:last-child { border-right: 0; }
-.cs-hero .cs-metrics li:last-child { border-right: 0; }
-@media (max-width: 800px) {
-  .cs-metrics li:nth-child(2n) { border-right: 0; }
-  .cs-metrics li:nth-child(n+3) { border-top: 1px solid rgba(10,10,10,0.06); }
-  .cs-hero .cs-metrics li:nth-child(2n) { border-right: 0; }
-  .cs-hero .cs-metrics li:nth-child(n+3) {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 12px;
-    margin-top: 8px;
-  }
-}
 .cs-metrics strong {
   display: block;
   font-family: var(--font-display);
@@ -2524,10 +2669,6 @@
   letter-spacing: -0.03em;
   line-height: 1;
   color: var(--color-ink);
-}
-.cs-hero .cs-metrics strong {
-  color: #fff;
-  font-size: clamp(1.15rem, 1rem + 0.55vw, 1.4rem);
 }
 .cs-metrics span {
   display: block;
@@ -2538,6 +2679,41 @@
   text-transform: uppercase;
   color: rgba(10,10,10,0.42);
 }
+.cs-hero .cs-metrics {
+  background: transparent;
+  border: 0;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  max-width: none;
+  width: 100%;
+}
+.cs-hero .cs-metrics ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+}
+.cs-hero .cs-metrics li {
+  padding: 0 10px;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  text-align: left;
+}
+.cs-hero .cs-metrics li:first-child { padding-left: 0; }
+.cs-hero .cs-metrics li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+@media (max-width: 800px) {
+  .cs-hero .cs-metrics ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 0; }
+  .cs-hero .cs-metrics li:nth-child(2n) { border-right: 0; }
+  .cs-hero .cs-metrics li:nth-child(n+3) {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 12px;
+  }
+}
+.cs-hero .cs-metrics strong {
+  color: #fff;
+  font-size: clamp(1.2rem, 1.05rem + 0.5vw, 1.45rem);
+}
 .cs-hero .cs-metrics span {
   margin-top: 5px;
   color: rgba(249,250,251,0.45);
@@ -2545,7 +2721,7 @@
 
 .cs-section {
   background: #fff;
-  padding: 28px 0;
+  padding: 48px 0 56px;
 }
 .cs-section.is-soft {
   background: #F9FAFB;
@@ -2556,6 +2732,26 @@
   background: #0E0E12;
   color: #fff;
   border: 0;
+}
+.cs-section-head {
+  margin: 0 0 24px;
+  max-width: 52ch;
+}
+.cs-section-head .badge { margin-bottom: 12px; }
+.cs-section-head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 1.15rem + 0.7vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--color-ink);
+}
+.cs-section-head p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
 }
 .cs-kicker {
   margin: 0 0 6px;
@@ -2710,20 +2906,20 @@
 /* Content stack + course-style sticky side panel */
 .cs-content-stack {
   display: grid;
-  gap: 14px;
+  gap: 16px;
   margin-top: 0;
 }
 .cs-block {
-  margin-top: 22px;
-  padding-top: 18px;
+  margin-top: 28px;
+  padding-top: 24px;
   border-top: 1px solid rgba(10,10,10,0.06);
 }
 .cs-block-head {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 .cs-block-head h3 {
   margin: 0;
@@ -2742,22 +2938,35 @@
 .cs-course-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(240px, 280px);
-  gap: 22px;
-  margin-top: 16px;
+  gap: 24px;
+  margin-top: 0;
   align-items: start;
 }
-@media (max-width: 900px) {
-  .cs-course-layout { grid-template-columns: 1fr; }
+@media (max-width: 1024px) {
+  .cs-course-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(200px, 228px);
+    gap: 16px;
+  }
 }
-.cs-main-col { min-width: 0; }
+@media (max-width: 900px) {
+  .cs-course-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(184px, 210px);
+    gap: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .cs-course-layout { grid-template-columns: 1fr; gap: 20px; }
+}
+.cs-main-col { min-width: 0; overflow-x: clip; }
 .cs-side-panel {
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid rgba(10,10,10,0.08);
   background: #F6F5F8;
-  padding: 14px 14px 16px;
+  padding: 18px 16px;
   display: flex;
   flex-direction: column;
   gap: 0;
+  min-width: 0;
 }
 .cs-side-panel.is-sticky {
   position: sticky;
@@ -2765,13 +2974,12 @@
   max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .cs-side-panel.is-sticky {
     position: static;
     max-height: none;
     overflow: visible;
   }
-  .cs-course-layout .cs-side-panel { order: -1; }
 }
 .cs-side-panel h3 {
   margin: 0;
@@ -2788,14 +2996,14 @@
   color: var(--color-ink-soft);
 }
 .cs-side-group {
-  padding: 12px 0;
+  padding: 14px 0;
   border-top: 1px solid rgba(10,10,10,0.08);
 }
 .cs-side-group:first-child {
   padding-top: 0;
   border-top: 0;
 }
-.cs-side-group h3 { margin-bottom: 8px; }
+.cs-side-group h3 { margin-bottom: 10px; }
 .cs-side-panel .cs-list {
   margin-top: 0;
   gap: 5px;
@@ -2812,6 +3020,8 @@
   padding: 4px 8px 4px 6px;
   font-size: 10.5px;
   background: #fff;
+  max-width: 100%;
+  white-space: normal;
 }
 .cs-side-panel .cs-channel svg {
   width: 12px;
@@ -2856,14 +3066,14 @@
 .cs-prose {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  gap: 12px;
 }
 @media (max-width: 800px) {
   .cs-prose { grid-template-columns: 1fr; }
 }
 .cs-prose article,
 .cs-brief-card {
-  padding: 14px 14px 15px;
+  padding: 16px 16px 18px;
   border-radius: 14px;
   border: 1px solid rgba(10,10,10,0.08);
   background: #fff;
@@ -2887,9 +3097,9 @@
 }
 
 .cs-role-dark {
-  margin-top: 18px;
+  margin-top: 24px;
   border-radius: 16px;
-  padding: 18px 16px 20px;
+  padding: 20px 18px 22px;
   background:
     radial-gradient(ellipse 70% 80% at 10% 0%, rgba(147,51,234,0.28), transparent 55%),
     linear-gradient(165deg, #14121A 0%, #0B0B10 100%);
@@ -2897,7 +3107,7 @@
   border: 1px solid rgba(255,255,255,0.08);
 }
 .cs-role-dark .cs-block-head {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .cs-role-dark .cs-block-head h3 { color: #fff; }
 .cs-role-dark .cs-block-head p { color: rgba(249,250,251,0.55); }
@@ -2925,11 +3135,8 @@
   color: #6D28D9;
 }
 
-.cs-side-role {
-  margin: 0;
-  font-size: 12.5px;
-  line-height: 1.45;
-  color: var(--color-ink-soft);
+.cs-side-group .cs-side-tags {
+  margin-top: 0;
 }
 
 .cs-side-facts {
@@ -3007,8 +3214,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .cs-dual-viewport {
   overflow: hidden;
@@ -3061,8 +3268,8 @@
 }
 
 /* Compact social / loop rails */
-.cs-social-block { margin-top: 12px; }
-.cs-social-block + .cs-social-block { margin-top: 14px; }
+.cs-social-block { margin-top: 18px; }
+.cs-social-block + .cs-social-block { margin-top: 18px; }
 .cs-social-block h3 {
   margin: 0;
   font-family: var(--font-display);
@@ -3078,8 +3285,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .cs-rail-viewport {
   overflow: hidden;
@@ -3250,8 +3457,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 .cs-speakers {
   margin-top: 0;
@@ -3366,30 +3573,52 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Related case studies — tighter cards */
-.cs-related-actions {
-  margin-top: 14px;
-  display: flex;
-  justify-content: center;
+/* Related case studies — dark band, same cards as listing */
+.cs-related {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(147,51,234,0.22), transparent 55%),
+    radial-gradient(ellipse 45% 40% at 90% 80%, rgba(37,99,235,0.14), transparent 50%),
+    #0E0E12;
+  padding: 48px 0 56px;
+  color: #fff;
+  border: 0;
 }
-.cs-related-grid .case-card[hidden] {
+.cs-related .sec-center {
+  margin-bottom: 8px;
+}
+.cs-related .sec-center h2 {
+  color: #fff;
+}
+.cs-related .sec-center p {
+  color: rgba(249,250,251,0.55);
+}
+.cs-related-actions {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cs-related .case-body .btn-ghost-light {
+  border-color: rgba(10,10,10,0.1);
+  background: #fff;
+  color: var(--color-ink);
+}
+.cs-related .case-grid {
+  margin-top: 28px;
+}
+.cs-related .case-card[hidden] {
   display: none !important;
 }
-.cs-related-grid {
-  gap: 12px !important;
+.cs-role-dark .cs-block-head h3 {
+  margin: 0;
+  font-size: clamp(1.05rem, 0.95rem + 0.35vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #fff;
 }
-.cs-related-grid .case-media {
-  aspect-ratio: 16 / 9;
-}
-.cs-related-grid .case-body {
-  padding: 12px 12px 14px;
-}
-.cs-related-grid .case-sub {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+.cs-role-dark .badge { width: fit-content; }
 
 /* Contact channel buttons */
 .cta-channels {
@@ -3430,147 +3659,583 @@
 .cta-channel.is-mail:hover { border-color: rgba(147,51,234,0.55); background: rgba(147,51,234,0.18); }
 .cta-channel.is-wa:hover { border-color: rgba(37,211,102,0.55); background: rgba(37,211,102,0.16); }
 
+/* Case study page — align shared bands to the same vertical rhythm */
+body[data-page="work"] .testimonials-section {
+  padding: 48px 0 56px;
+}
+body[data-page="work"] .testimonials-section .testi-track-wrap {
+  margin-top: 24px;
+}
+body[data-page="work"] .cta-band {
+  padding: 48px 0 56px;
+}
+
+.cs-hero > .hero-media { z-index: 0; }
+.cs-hero > .shell { position: relative; z-index: 2; }
+.cs-hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.cs-hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.cs-hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8,6,16,0.58) 0%, rgba(8,6,16,0.72) 42%, rgba(8,6,16,0.88) 100%),
+    linear-gradient(90deg, rgba(18,8,31,0.5), rgba(18,8,31,0.18) 70%);
+}
+.cs-side-panel.is-sticky {
+  top: 76px;
+  max-height: calc(100vh - 92px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 12px 10px 10px;
+}
+.cs-side-panel .cs-side-group + .cs-side-group {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.cs-ic-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 8px;
+}
+.cs-ic-stat {
+  margin: 0;
+  padding: 8px 8px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 22px -20px rgba(23,30,43,0.28);
+  min-width: 0;
+}
+.cs-ic-stat-wide {
+  grid-column: 1 / -1;
+}
+.cs-ic-stat b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  line-height: 1.1;
+}
+.cs-ic-stat span {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: rgba(10,10,10,0.48);
+  overflow-wrap: break-word;
+}
+.cs-ic-note {
+  margin: 8px 0 0;
+  font-size: 10px;
+  line-height: 1.35;
+  color: rgba(10,10,10,0.42);
+}
+
+#cs-people {
+  container-type: inline-size;
+}
+#cs-people .cs-speaker {
+  width: calc((100cqi - 32px) / 5);
+  max-width: 152px;
+}
+#cs-people .cs-speaker-body {
+  min-width: 0;
+  padding: 8px 9px 10px;
+}
+#cs-people .cs-speaker-body h3,
+#cs-people .cs-speaker-role {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#cs-people .cs-socials a {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+}
+#cs-people .cs-socials a svg { flex: 0 0 auto; }
+#cs-people .cs-socials a .n { margin-left: auto; flex: 0 0 auto; }
+@media (max-width: 720px) {
+  #cs-people .cs-speaker { width: calc((100cqi - 8px) / 2.15); max-width: none; }
+}
+
+.cs-happened-band {
+  margin-top: 18px;
+  padding: 18px 16px 16px;
+}
+.cs-happened-band .cs-block-head { margin-bottom: 12px; }
+.cs-happened-band .cs-block-head h3 {
+  color: #fff;
+  font-size: 1.02rem;
+}
+.cs-flow {
+  list-style: none;
+  margin: 0;
+  padding: 2px 0 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px 10px;
+  position: relative;
+}
+.cs-flow::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 14px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(168,85,247,0.75), rgba(37,99,235,0.75));
+  opacity: 0.55;
+}
+.cs-flow li {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+.cs-flow li span {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #9333EA, #2563EB);
+  box-shadow: 0 0 0 4px rgba(147,51,234,0.18);
+}
+.cs-flow h4 {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.cs-flow p {
+  margin: 4px 0 0;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: rgba(249,250,251,0.62);
+}
+@media (max-width: 760px) {
+  .cs-flow {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .cs-flow::before {
+    left: 13px;
+    right: auto;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    height: auto;
+  }
+  .cs-flow li {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 0 12px;
+    align-items: start;
+  }
+  .cs-flow li span { grid-row: 1 / span 2; }
+  .cs-flow h4 { margin-top: 2px; }
+}
+
+.cs-guest-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 0;
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 24px -22px rgba(23,30,43,0.28);
+}
+@media (max-width: 760px) {
+  .cs-guest-feature { grid-template-columns: 1fr; }
+}
+.cs-guest-feature figure {
+  margin: 0;
+  min-height: 260px;
+  background: #1A102E;
+  overflow: hidden;
+}
+.cs-guest-feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  aspect-ratio: 16 / 10;
+}
+.cs-guest-copy {
+  padding: 22px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+.cs-guest-copy .badge { margin-bottom: 10px; }
+.cs-guest-copy h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+.cs-guest-role {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-violet);
+}
+.cs-guest-copy p {
+  margin: 10px 0 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+}
+.cs-guest-ig {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(147,51,234,0.22);
+  background: rgba(147,51,234,0.06);
+  color: #6D28D9;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cs-guest-ig svg { width: 12px; height: 12px; fill: currentColor; }
+.cs-guest-ig span {
+  color: rgba(17,24,39,0.48);
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-ic-media { container-type: inline-size; }
+.cs-ic-media .cs-dual-viewport,
+.cs-ic-media .cs-rail-viewport { overflow: hidden; }
+.cs-ic-media .cs-dual-col {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+}
+.cs-ic-media .cs-post {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  background: #EDE9FE;
+}
+.cs-ic-media .cs-reel {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  max-width: 168px;
+  background: #EDE9FE;
+}
+.cs-ic-media .cs-dual-shot { background: #EDE9FE; position: relative; }
+.cs-ic-media .cs-dual-shot figcaption { z-index: 1; pointer-events: none; }
+
+.cs-ic-media .cs-dual-shot a { display:block; position:absolute; inset:0; }
+.cs-ic-media .cs-dual-shot a img { width:100%; height:100%; object-fit:cover; }
+
+.cs-ic-media .cs-post-overlay {
+  background: linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.62));
+}
+@media (max-width: 720px) {
+  .cs-ic-media .cs-dual-col { flex-basis: calc((100cqi - 6px) / 2.2); }
+  .cs-ic-media .cs-post { flex-basis: calc((100cqi - 6px) / 2.2); }
+  .cs-ic-media .cs-reel { flex-basis: calc((100cqi - 6px) / 2.2); max-width: none; }
+}
+
+@media (max-width: 640px) {
+  .cs-side-panel.is-sticky {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body data-page="work" class="overflow-x-hidden bg-cream font-sans text-md text-ink antialiased selection:bg-violet selection:text-white">
+<body data-page="work" class="cs-bic-page overflow-x-hidden bg-cream font-sans text-md text-ink antialiased selection:bg-violet selection:text-white">
 <div id="site-nav"></div>
 
 <header class="cs-hero">
+  <div class="cs-hero-photo" aria-hidden="true">
+    <img src="../assets/bic-s1/hero.jpg" alt="" width="1600" height="900">
+  </div>
   <div class="shell">
     <div class="cs-hero-top">
       <a class="cs-back" href="./index.html"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg> All case studies</a>
-      <span class="badge badge-dark"><span class="badge-dot"></span>Challenge · Platforms</span>
     </div>
-    <h1>Bharat Innovation Challenge</h1>
-    <p class="cs-lead">A national innovation platform connecting schools, students and opportunity at scale.</p>
-    <div class="cs-meta" aria-label="Project details">
-      <span><em>Client</em>Lovely Professional University</span>
-      <span><em>Location</em>Pan-India + LPU finale</span>
-      <span><em>Year</em>Season 1</span>
-      <span><em>Category</em>National innovation challenge</span>
+    <div class="cs-hero-grid">
+      <div class="cs-hero-copy">
+        <h1>Bharat Innovation Challenge, Season 1</h1>
+        <p class="cs-lead">2,600+ teams. 28 states. One national stage for new ideas.</p>
+        <div class="cs-meta" aria-label="Project details">
+          <span><em>Organised and hosted by</em>Lovely Professional University</span>
+          <span><em>Finale</em>LPU, 17 to 18 April 2026</span>
+          <span><em>Year</em>2025-26</span>
+          <span><em>Type</em>National innovation challenge</span>
+        </div>
+      </div>
+      <figure class="cs-hero-media">
+        <img src="../assets/bic-s1/hero-panel.jpg" alt="A student team with their prototype at the Bharat Innovation Challenge Season 1 expo" width="1200" height="800" decoding="async">
+      </figure>
     </div>
   </div>
 </header>
 
-<section class="cs-metrics" aria-label="Key metrics">
-  <div class="shell">
-    <ul><li><strong>18,000+</strong><span>Schools</span></li><li><strong>10,000+</strong><span>Applications</span></li><li><strong>500+</strong><span>Cities</span></li><li><strong>35L+</strong><span>Views</span></li></ul>
-  </div>
-</section>
-
 <section class="cs-section">
   <div class="shell">
-    <p class="cs-kicker">Overview</p>
-    <h2>Challenge and our role.</h2>
-    <div class="cs-split">
-      <article class="cs-panel">
-        <h3>The challenge</h3>
-        <p>Build a national innovation challenge that schools can actually run — with real student participation, partner value and measurable reach.</p>
+    <div class="cs-section-head">
+      <span class="badge badge-violet"><span class="badge-dot"></span>Case study</span>
+      <h2>A national stage, hosted at LPU.</h2>
+      <p>School teams from across India brought ideas to a two-stage challenge and a finale on campus.</p>
+    </div>
+
+    <div class="cs-course-layout">
+      <div class="cs-main-col">
+        <div id="cs-brief" class="cs-prose">
+          <article class="cs-brief-card">
+            <h3>Brief</h3>
+            <p>Lovely Professional University gave school students across India a stage for ideas rooted in real problems. Thousands entered the challenge. At the LPU finale, young innovators showed what they had built and put their thinking before an industry jury.</p>
+          </article>
+          <article class="cs-brief-card">
+            <h3>Agenda</h3>
+            <p>Bring young problem-solvers into the challenge. Move ideas toward working prototypes. Give student teams the room, feedback and visibility to make their work count.</p>
+          </article>
+          <article class="cs-brief-card">
+            <h3>Vision</h3>
+            <p>Let India's next generation test its ideas in public, defend them with conviction and see where they could lead.</p>
+          </article>
+        </div>
+
+        <div class="cs-story">
+        <div id="cs-happened" class="cs-role-dark cs-happened-band">
+          <div class="cs-block-head">
+            <div>
+              <span class="badge badge-dark mb-3"><span class="badge-dot"></span>What Happened</span>
+              <h3>From a national call to the LPU stage.</h3>
+            </div>
+          </div>
+          <ol class="cs-flow">
+            <li><span aria-hidden="true">1</span><div><h4>The national call</h4><p>School teams across India were invited to tackle real problems.</p></div></li>
+            <li><span aria-hidden="true">2</span><div><h4>The response</h4><p>More than 2,600 teams registered from 28 states.</p></div></li>
+            <li><span aria-hidden="true">3</span><div><h4>The build</h4><p>Online submissions moved ideas toward working prototypes.</p></div></li>
+            <li><span aria-hidden="true">4</span><div><h4>The room</h4><p>120 teams reached the LPU finale to exhibit, pitch and meet industry voices.</p></div></li>
+            <li><span aria-hidden="true">5</span><div><h4>The finale and beyond</h4><p>LPU hosted the grand finale, followed by awards, press coverage and continued conversation.</p></div></li>
+          </ol>
+        </div>
+
+        <div class="cs-block">
+          <div class="cs-block-head">
+            <div>
+              <h3>National footprint</h3>
+              <p>Further Season 1 reach, kept to the figures that describe geography and audience.</p>
+            </div>
+          </div>
+          <div class="cs-footprint">
+            <p><b>500+</b><span>Cities with participation</span></p>
+            <p><b>4.3 lakh+</b><span>Impressions on Unstop and other platforms</span></p>
+            <p><b>2 lakh+</b><span>Students reached via community groups</span></p>
+          </div>
+        </div>
+
+        <div id="cs-people" class="cs-block">
+          <div class="cs-block-head">
+            <div>
+              <h3>Partners, jury and student teams</h3>
+              <p>Season 1 partners, plus jury and student voices from the finale.</p>
+            </div>
+          </div>
+          <div class="cs-partners" aria-label="Season 1 partners">
+            <figure class="cs-partner"><img src="../assets/bic-s1/logo-quantiphi.png" alt="Quantiphi"><span>AI partner</span></figure>
+            <figure class="cs-partner"><img src="../assets/bic-s1/logo-the-hindu.png" alt="The Hindu"><span>Media partner</span></figure>
+            <figure class="cs-partner"><img src="../assets/bic-s1/logo-citizen.png" alt="Citizen"><span>Innovate Forward by</span></figure>
+            <figure class="cs-partner"><img src="../assets/bic-s1/logo-scarters.png" alt="Scarters"><span>Lifestyle partner</span></figure>
+            <figure class="cs-partner"><img src="../assets/bic-s1/logo-blix.png" alt="Blix"><span>Robotics partner</span></figure>
+          </div>
+
+          <div class="cs-jury" aria-label="Season 1 jury">
+            <article>
+              <img src="../assets/bic-s1/jury-bharat-bansal.jpg" alt="Bharat Bansal" width="400" height="250" loading="lazy" decoding="async">
+              <h4>Bharat Bansal</h4>
+              <p>CEO and Co-Founder, Nirmalaya. Season 1 jury.</p>
+            </article>
+            <article>
+              <img src="../assets/bic-s1/jury-anshuman-tiwari.jpg" alt="Anshuman Tiwari" width="400" height="250" loading="lazy" decoding="async">
+              <h4>Anshuman Tiwari</h4>
+              <p>Global Experience Owner for HR, GSK. Season 1 jury.</p>
+            </article>
+            <article>
+              <img src="../assets/bic-s1/jury-richa-shailesh.jpg" alt="Richa Shailesh" width="400" height="250" loading="lazy" decoding="async">
+              <h4>Richa Shailesh</h4>
+              <p>Founder, NextAxis Consulting. Season 1 jury.</p>
+            </article>
+          </div>
+
+          <div class="cs-voices">
+            <article class="cs-voice">
+              <span class="badge badge-violet"><span class="badge-dot"></span>Jury</span>
+              <blockquote>What stood out the most was the sheer originality of ideas. These are not just ideas, but thoughtful solutions that reflect real-world understanding and creativity.</blockquote>
+              <cite>Bharat Bansal, CEO and Co-Founder, Nirmalaya</cite>
+            </article>
+            <article class="cs-voice">
+              <span class="badge badge-violet"><span class="badge-dot"></span>Partner</span>
+              <blockquote>It has been an absolute pleasure to be here at the Bharat Innovation Challenge hosted by Lovely Professional University. The scale, vision and execution of this initiative truly reflect LPU's commitment to nurturing innovation at the grassroots level.</blockquote>
+              <cite>Johncy John, Marketing Manager, Citizen Watches</cite>
+            </article>
+            <article class="cs-voice">
+              <span class="badge badge-violet"><span class="badge-dot"></span>Student team</span>
+              <blockquote>Being part of the Bharat Innovation Challenge gave us the opportunity to showcase our idea but also to witness the sheer intensity and scale of the competition.</blockquote>
+              <cite>Soorya Kiran, Team Mitosis, Class 11, Tamil Nadu</cite>
+            </article>
+          </div>
+        </div>
+
+        <div id="cs-media" class="cs-block cs-ic-media cs-bic-photos">
+          <div class="cs-dual-gallery" data-dual-gallery>
+            <div class="cs-block-head">
+              <div>
+                <h3>Photos</h3>
+                <p>Season 1 at LPU: expo, pitches and the grand finale.</p>
+              </div>
+              <div class="cs-gallery-nav">
+                <button type="button" data-gallery-prev aria-label="Previous photos"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <button type="button" data-gallery-next aria-label="Next photos"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+              </div>
+            </div>
+            <div class="cs-dual-viewport">
+              <div class="cs-dual-track" data-dual-track>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-01-expo.jpg"><img src="../assets/bic-s1/photo-01-expo.jpg" alt="Students present a prototype at the Season 1 expo" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Prototype exhibition</figcaption></figure></div><div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-02-expo-car.jpg"><img src="../assets/bic-s1/photo-02-expo-car.jpg" alt="A school team works on a mobility prototype at their booth" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Prototype exhibition</figcaption></figure></div><div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-03-vigilhelm.jpg"><img src="../assets/bic-s1/photo-03-vigilhelm.jpg" alt="Student team with a prototype helmet at the expo" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Prototype exhibition</figcaption></figure></div><div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-04-pitch.jpg"><img src="../assets/bic-s1/photo-04-pitch.jpg" alt="A student team pitches a working prototype to a juror" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Jury pitch</figcaption></figure></div><div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-05-pitch-room.jpg"><img src="../assets/bic-s1/photo-05-pitch-room.jpg" alt="A student pitches to jurors in a Season 1 presentation room" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Jury pitch</figcaption></figure></div><div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-06-awards.jpg"><img src="../assets/bic-s1/photo-06-awards.jpg" alt="Overall winner cheque presented on the grand finale stage" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Award ceremony</figcaption></figure></div><div class="cs-dual-col"><figure class="cs-dual-shot"><a href="../assets/bic-s1/photo-08-campus.jpg"><img src="../assets/bic-s1/photo-08-campus.jpg" alt="Teams and mentors at the LPU campus for the Season 1 finale" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Grand finale</figcaption></figure></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-social-block cs-rail" data-loop-rail data-loop-item=".cs-post" data-loop-interval="3400">
+            <div class="cs-rail-head">
+              <h3>Posts and press</h3>
+              <div class="cs-gallery-nav">
+                <button type="button" data-loop-prev aria-label="Previous press"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <button type="button" data-loop-next aria-label="Next press"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+              </div>
+            </div>
+            <div class="cs-rail-viewport">
+              <div class="cs-posts cs-rail-track" data-loop-track>
+                <a class="cs-post" href="https://www.thehindu.com/news/cities/Delhi/dav-public-school-dehradun-wins-overall-champions-trophy-at-bharat-innovation-challenge/article70885120.ece" target="_blank" rel="noopener noreferrer"><img src="../assets/bic-s1/press-01-the-hindu.jpg" alt="DAV Public School, Dehradun wins overall champions trophy" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>The Hindu</em>DAV Public School, Dehradun wins overall champions trophy</span></a><a class="cs-post" href="https://www.tribuneindia.com/news/jalandhar/dav-dehraduns-sanketra-i-wins-top-honour-at-innovation-challenge/" target="_blank" rel="noopener noreferrer"><img src="../assets/bic-s1/press-02-tribune.jpg" alt="Sanketra-I wins top honour" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>The Tribune</em>Sanketra-I wins top honour</span></a><a class="cs-post" href="../assets/bic-s1/press-03-hindi.jpg"><img src="../assets/bic-s1/press-03-hindi.jpg" alt="Hindi coverage of the LPU finale" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Press</em>Hindi coverage of the LPU finale</span></a><a class="cs-post" href="../assets/bic-s1/press-04-jagran.jpg"><img src="../assets/bic-s1/press-04-jagran.jpg" alt="Hindi coverage of the grand finale" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Press</em>Hindi coverage of the grand finale</span></a><a class="cs-post" href="../assets/bic-s1/press-05-english.jpg"><img src="../assets/bic-s1/press-05-english.jpg" alt="Sanketra-I wins top honours" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Press</em>Sanketra-I wins top honours</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <aside class="cs-side-panel is-sticky" aria-label="Role and outcomes">
+        <div class="cs-side-group">
+          <h3>Our Role</h3>
+          <p>Lovely Professional University organised and hosted Season 1, including the national call and the campus finale.</p>
+          <p class="cs-ic-note">Guby Rogers' exact Season 1 brief is awaiting confirmation before a fuller role line is published.</p>
+        </div>
+        <div class="cs-side-group">
+          <h3>Outcomes</h3>
+          <div class="cs-ic-stats">
+            <p class="cs-ic-stat"><b>2,600+</b><span>Teams registered across India</span></p>
+            <p class="cs-ic-stat"><b>10,000+</b><span>Participants applied for Season 1</span></p>
+            <p class="cs-ic-stat"><b>28</b><span>States with participation</span></p>
+            <p class="cs-ic-stat"><b>60+</b><span>Prototypes showcased</span></p>
+            <p class="cs-ic-stat"><b>200+</b><span>Attendees at the Season 1 grand finale</span></p>
+            <p class="cs-ic-stat"><b>8</b><span>Investment offers made by jury members at the grand finale</span></p>
+            <p class="cs-ic-stat"><b>35 lakh+</b><span>Views on Instagram, Facebook and YouTube</span></p>
+            <p class="cs-ic-stat"><b>18,000+</b><span>Schools reached with The Hindu in School</span></p>
+          </div>
+          <p class="cs-ic-note">Figures reported in the BIC Season 2 partnership deck's Season 1 review. These are not audited analytics. Eight investment offers does not mean eight investments were completed. A signed impact report is still outstanding.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="cs-related" data-related aria-label="Other case studies">
+  <div class="shell">
+    <div class="sec-center">
+      <span class="badge badge-dark mb-4"><span class="badge-dot"></span>Case Studies</span>
+      <h2 class="font-display text-3xl font-bold text-white">Other case studies.</h2>
+      <p class="mt-3 max-w-none text-sm">More programmes from the same practice.</p>
+    </div>
+    <div class="case-grid">
+
+      <article class="case-card" data-related-item>
+        <div class="case-media">
+          <img src="../assets/instaconfluence/hero.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
+          <span class="case-badge"><i></i>Creator Summit</span>
+          <div class="case-media-foot">
+            <div class="case-mark">Insta<em>Confluence</em></div>
+            <div class="case-feat"><b>18</b><span>Creators</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h2>InstaConfluence</h2>
+          <p class="case-sub">18 creators. One campus. Stories that travelled far beyond the stage.</p>
+          <ul class="case-stats"><li><strong>18</strong><span>Creators</span></li><li><strong>20</strong><span>Reels</span></li><li><strong>2024</strong><span>Year</span></li></ul>
+          <a href="./instaconfluence.html" class="btn btn-violet btn-sm">View Case Study →</a>
+        </div>
       </article>
-      <article class="cs-panel">
-        <h3>Our role</h3>
-        <p>Platform design, season architecture, mobilisation systems and end-to-end programme delivery across schools and partners.</p>
+      <article class="case-card" data-related-item>
+        <div class="case-media">
+          <img src="../assets/kl-immersion/card.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
+          <span class="case-badge"><i></i>Global Immersion</span>
+          <div class="case-media-foot">
+            <div class="case-mark">Kuala<em>Lumpur</em></div>
+            <div class="case-feat"><b>5</b><span>Days</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h2>LPU CSE Global Immersion, Kuala Lumpur</h2>
+          <p class="case-sub">Five days. Twelve passports. A wider world of possibility.</p>
+          <ul class="case-stats"><li><strong>5</strong><span>Days</span></li><li><strong>12</strong><span>Passports</span></li><li><strong>2026</strong><span>Year</span></li></ul>
+          <a href="./lpu-cse-kuala-lumpur.html" class="btn btn-violet btn-sm">View Case Study →</a>
+        </div>
       </article>
-    </div>
-  </div>
-</section>
-
-
-<section class="cs-section">
-  <div class="shell">
-    <div class="cs-gallery" data-gallery>
-      <div class="cs-gallery-head">
-        <div>
-          <p class="cs-kicker">Gallery</p>
-          <h2>Inside the work.</h2>
-          <p class="cs-intro">A short visual pass across the programme — swipe or use the arrows.</p>
+      <article class="case-card" data-related-item>
+        <div class="case-media">
+          <img src="../assets/dubai-immersion/card.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
+          <span class="case-badge"><i></i>Global Immersion</span>
+          <div class="case-media-foot">
+            <div class="case-mark">Dubai<em>2025</em></div>
+            <div class="case-feat"><b>2</b><span>Streams</span></div>
+          </div>
         </div>
-        <div class="cs-gallery-nav">
-          <button type="button" data-gallery-prev aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-          <button type="button" data-gallery-next aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+        <div class="case-body">
+          <h2>LPU Global Immersion, Dubai</h2>
+          <p class="case-sub">A business education you could walk into.</p>
+          <ul class="case-stats"><li><strong>BBA</strong><span>Stream</span></li><li><strong>BCom</strong><span>Stream</span></li><li><strong>2025</strong><span>Year</span></li></ul>
+          <a href="./lpu-dubai-immersion.html" class="btn btn-violet btn-sm">View Case Study →</a>
         </div>
-      </div>
-      <div class="cs-gallery-viewport">
-        <div class="cs-gallery-track" data-gallery-track>
-          <figure class="cs-slide"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Student teams</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Build sessions</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Mentorship</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Showcases</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Partner briefings</figcaption></figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cs-section is-soft">
-  <div class="shell">
-    <p class="cs-kicker">Delivery</p>
-    <h2>What we did. How it moved.</h2>
-    <div class="cs-split">
-      <article class="cs-panel">
-        <h3>What was done</h3>
-        <ul class="cs-list"><li>Season design and challenge architecture</li><li>School mobilisation and application systems</li><li>Mentor and jury experience design</li><li>Partner storytelling and impact reporting</li><li>Digital + on-ground showcase moments</li></ul>
       </article>
-      <article class="cs-panel">
-        <h3>Marketing channels</h3>
-        <p>Channels used to build audience, partners and participation.</p>
-        <div class="cs-channels"><span class="cs-channel"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>Instagram & YouTube</span><span class="cs-channel"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>School networks</span><span class="cs-channel"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg>Counsellor briefs</span><span class="cs-channel"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>National PR</span><span class="cs-channel"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>City showcases</span><span class="cs-channel"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3z"/></svg>Student films</span></div>
-      </article>
-    </div>
-  </div>
-</section>
 
-<section class="cs-section">
-  <div class="shell">
-    <p class="cs-kicker">Outcomes</p>
-    <h2>What moved.</h2>
-    <div class="cs-outcomes">
-      <div class="cs-outcome-copy">
-        <p>Season 1 delivered verified national reach across schools, applications, cities and digital views.</p><p>The challenge operates as a platform — not a one-off competition date.</p>
-      </div>
-      <div class="cs-outcome-stats"><div class="cs-outcome-stat"><b>18k+</b><span>Schools reached</span></div><div class="cs-outcome-stat"><b>10k+</b><span>Applications</span></div><div class="cs-outcome-stat"><b>2,600+</b><span>Teams</span></div><div class="cs-outcome-stat"><b>35L+</b><span>Digital views</span></div></div>
     </div>
-  </div>
-</section>
-
-
-<section class="cs-section is-soft">
-  <div class="shell">
-    <div class="cs-gallery" data-gallery>
-      <div class="cs-gallery-head">
-        <div>
-          <p class="cs-kicker">Special moments</p>
-          <h2>Moments that stayed.</h2>
-          <p class="cs-intro">Highlights from the floor, stage and community.</p>
-        </div>
-        <div class="cs-gallery-nav">
-          <button type="button" data-gallery-prev aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-          <button type="button" data-gallery-next aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
-        </div>
-      </div>
-      <div class="cs-gallery-viewport">
-        <div class="cs-gallery-track" data-gallery-track>
-          <figure class="cs-slide"><img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Prototype day</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Jury room</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Finale energy</figcaption></figure><figure class="cs-slide"><img src="https://images.unsplash.com/photo-1556761175-b413da4b248b?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" decoding="async" width="800" height="600"><figcaption>Team wins</figcaption></figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cs-section">
-  <div class="shell">
-    <p class="cs-kicker">People</p>
-    <h2>Speakers &amp; voices onboarded.</h2>
-    <p class="cs-intro">Influencers, educators and leaders who shaped the room — with profiles you can open.</p>
-    <div class="cs-speakers" aria-label="Speakers">
-      <div class="cs-speakers-track">
-        <article class="cs-speaker"><div class="cs-speaker-photo" aria-hidden="true">NJ</div><div class="cs-speaker-body"><h3>Neha Joshi</h3><div class="cs-speaker-role">University Office</div><span class="cs-speaker-tag">Mentor</span><p class="cs-speaker-bio">Higher-ed mentor for student builders.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN · 22k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN<span class="n">22k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IG"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>IG</a></li></ul></div></article><article class="cs-speaker"><div class="cs-speaker-photo is-navy" aria-hidden="true">AD</div><div class="cs-speaker-body"><h3>Arjun Desai</h3><div class="cs-speaker-role">Admissions Director</div><span class="cs-speaker-tag">Jury</span><p class="cs-speaker-bio">Jury voice on platforms that keep working after the event.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN · 11k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN<span class="n">11k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="YT · 8.4k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.75 15.5v-7l6.2 3.5z"/></svg>YT<span class="n">8.4k</span></a></li></ul></div></article><article class="cs-speaker"><div class="cs-speaker-photo" aria-hidden="true">SK</div><div class="cs-speaker-body"><h3>Sara Khan</h3><div class="cs-speaker-role">Creator</div><span class="cs-speaker-tag">Influencer</span><p class="cs-speaker-bio">Youth creator amplifying student innovation stories.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IG · 340k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>IG<span class="n">340k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="YT · 210k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.75 15.5v-7l6.2 3.5z"/></svg>YT<span class="n">210k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN</a></li></ul></div></article><article class="cs-speaker"><div class="cs-speaker-photo is-navy" aria-hidden="true">MR</div><div class="cs-speaker-body"><h3>Mohit Rao</h3><div class="cs-speaker-role">Founder</div><span class="cs-speaker-tag">Industry</span><p class="cs-speaker-bio">Industry mentor for prototype-to-pitch journeys.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN · 56k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN<span class="n">56k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IG · 89k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>IG<span class="n">89k</span></a></li></ul></div></article>
-        <article class="cs-speaker"><div class="cs-speaker-photo" aria-hidden="true">NJ</div><div class="cs-speaker-body"><h3>Neha Joshi</h3><div class="cs-speaker-role">University Office</div><span class="cs-speaker-tag">Mentor</span><p class="cs-speaker-bio">Higher-ed mentor for student builders.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN · 22k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN<span class="n">22k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IG"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>IG</a></li></ul></div></article><article class="cs-speaker"><div class="cs-speaker-photo is-navy" aria-hidden="true">AD</div><div class="cs-speaker-body"><h3>Arjun Desai</h3><div class="cs-speaker-role">Admissions Director</div><span class="cs-speaker-tag">Jury</span><p class="cs-speaker-bio">Jury voice on platforms that keep working after the event.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN · 11k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN<span class="n">11k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="YT · 8.4k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.75 15.5v-7l6.2 3.5z"/></svg>YT<span class="n">8.4k</span></a></li></ul></div></article><article class="cs-speaker"><div class="cs-speaker-photo" aria-hidden="true">SK</div><div class="cs-speaker-body"><h3>Sara Khan</h3><div class="cs-speaker-role">Creator</div><span class="cs-speaker-tag">Influencer</span><p class="cs-speaker-bio">Youth creator amplifying student innovation stories.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IG · 340k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>IG<span class="n">340k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="YT · 210k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.75 15.5v-7l6.2 3.5z"/></svg>YT<span class="n">210k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN</a></li></ul></div></article><article class="cs-speaker"><div class="cs-speaker-photo is-navy" aria-hidden="true">MR</div><div class="cs-speaker-body"><h3>Mohit Rao</h3><div class="cs-speaker-role">Founder</div><span class="cs-speaker-tag">Industry</span><p class="cs-speaker-bio">Industry mentor for prototype-to-pitch journeys.</p><ul class="cs-socials"><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IN · 56k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 6a2.48 2.48 0 0 1 2.48-2.5zM3 8.75h3.95V21H3zm7.05 0H14v1.67h.06c.55-1 1.9-2.05 3.91-2.05 4.18 0 4.95 2.75 4.95 6.33V21H19v-5.72c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3V21h-3.95z"/></svg>IN<span class="n">56k</span></a></li><li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="IG · 89k"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>IG<span class="n">89k</span></a></li></ul></div></article>
-      </div>
-    </div>
-    <div class="cs-next mt-8 flex flex-wrap items-center gap-3">
-      <a href="./university-transformation.html" class="btn btn-violet btn-sm">University Transformation →</a>
-      <a href="./eil.html" class="btn btn-ghost-light btn-sm">EIL Conference →</a>
-      <a href="./index.html" class="btn btn-ghost-light btn-sm">All case studies</a>
-      <a href="../contact.html" class="btn btn-violet btn-sm">Start a Conversation →</a>
+    <div class="cs-related-actions">
+      <a href="./index.html" class="btn btn-ghost-dark btn-sm">All Case Studies →</a>
     </div>
   </div>
 </section>
@@ -3580,10 +4245,20 @@
     <div class="cta-panel">
       <span class="badge badge-dark"><span class="badge-dot"></span>Start a conversation</span>
       <h2>Have a programme worth building?</h2>
-      <p>Tell us about the platform, partnership or institutional challenge you want to take forward.</p>
-      <div class="cta-actions">
-        <a href="../contact.html" class="btn btn-violet btn-sm">Start a Conversation →</a>
-        <a href="../what-we-do/index.html" class="btn btn-ghost-dark btn-sm">Explore What We Do</a>
+      <p>Reach us on Instagram, email or WhatsApp.</p>
+      <div class="cta-channels">
+        <a class="cta-channel is-ig" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>
+          Instagram
+        </a>
+        <a class="cta-channel is-mail" href="mailto:hello@gubyrogers.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2 9 7 9-7"/></svg>
+          Email
+        </a>
+        <a class="cta-channel is-wa" href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 0 1 6.9 12.2l-.3.48.2 1.2-1.15.24-.46.3a8.1 8.1 0 0 1-11.6-7.1 8.1 8.1 0 0 1 6.41-7.32z"/></svg>
+          WhatsApp
+        </a>
       </div>
     </div>
   </div>

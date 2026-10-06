@@ -247,20 +247,20 @@
     },
     {
       "slug": "bic",
-      "title": "Bharat Innovation Challenge",
+      "title": "Bharat Innovation Challenge, Season 1",
       "type": "Innovation Challenge",
       "vertical": "events",
       "verticalLabel": "Events & Experiences",
-      "shortSummary": "A national innovation platform connecting schools, students and opportunity.",
+      "shortSummary": "2,600+ teams. 28 states. One national stage for new ideas.",
       "featured": true,
       "published": true,
-      "year": "Season 1",
-      "href": "work/bic.html",
+      "year": "2025-26",
+      "href": "./work/bic.html",
       "metrics": [
-        { "value": "18,000+", "label": "Schools reached", "verified": true },
-        { "value": "10,000+", "label": "Applications", "verified": true },
-        { "value": "2,600+", "label": "Teams", "verified": true },
-        { "value": "35 Lakh+", "label": "Digital views", "verified": true }
+        { "value": "2,600+", "label": "Teams registered", "verified": true },
+        { "value": "10,000+", "label": "Participants applied", "verified": true },
+        { "value": "28", "label": "States", "verified": true },
+        { "value": "60+", "label": "Prototypes showcased", "verified": true }
       ]
     },
     {

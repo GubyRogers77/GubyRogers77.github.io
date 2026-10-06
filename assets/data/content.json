@@ -222,6 +222,30 @@
       "href": "./work/instaconfluence.html"
     },
     {
+      "slug": "lpu-cse-kuala-lumpur",
+      "title": "LPU CSE Global Immersion, Kuala Lumpur",
+      "type": "Global Immersion",
+      "vertical": "immersion",
+      "verticalLabel": "Global Immersion",
+      "shortSummary": "Five days. Twelve passports. A wider world of possibility.",
+      "featured": true,
+      "published": true,
+      "year": "2026",
+      "href": "./work/lpu-cse-kuala-lumpur.html"
+    },
+    {
+      "slug": "lpu-dubai-immersion",
+      "title": "LPU Global Immersion, Dubai",
+      "type": "Global Immersion",
+      "vertical": "immersion",
+      "verticalLabel": "Global Immersion",
+      "shortSummary": "A business education you could walk into.",
+      "featured": true,
+      "published": true,
+      "year": "2025",
+      "href": "./work/lpu-dubai-immersion.html"
+    },
+    {
       "slug": "bic",
       "title": "Bharat Innovation Challenge",
       "type": "Innovation Challenge",

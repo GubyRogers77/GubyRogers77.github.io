@@ -3,14 +3,354 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Studies — Guby Rogers</title>
-<meta name="description" content="Selected case studies — programmes, platforms and outcomes from Guby Rogers.">
+<title>Education Expo 2025 | Guby Rogers</title>
+<meta name="description" content="Nearly 600 students. 20+ institutes. One room full of next steps. Education Expo 2025 at Eros Hotel, New Delhi, led by Daksh Sethi through Guby Rogers.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PHJlY3Qgd2lkdGg9JzY0JyBoZWlnaHQ9JzY0JyByeD0nMTYnIGZpbGw9JyM2RDI4RDknLz48dGV4dCB4PSczMicgeT0nNDInIGZvbnQtZmFtaWx5PSdNZW5sbycgZm9udC13ZWlnaHQ9JzcwMCcgZm9udC1zaXplPScyMCcgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPkdSPC90ZXh0Pjwvc3ZnPg==">
 <style>
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
   @font-face{font-family:'Satoshi';src:url('../fonts/satoshi-bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+
+.cs-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 4px;
+}
+.cs-highlights span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(147,51,234,0.18);
+  background: rgba(147,51,234,0.06);
+  color: #4C1D95;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 11px;
+}
+.cs-voice {
+  margin-top: 14px;
+  padding: 16px 16px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 22px -20px rgba(23,30,43,0.28);
+}
+.cs-voice .badge { margin-bottom: 8px; }
+.cs-voice blockquote {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--color-ink);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.cs-voice cite {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+.cs-partners {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.cs-partner {
+  margin: 0;
+  padding: 10px 8px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  text-align: center;
+  min-width: 0;
+}
+.cs-partner img {
+  width: 100%;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+.cs-partner span {
+  display: block;
+  margin-top: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(10,10,10,0.48);
+}
+.cs-jury {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.cs-jury article {
+  margin: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  overflow: hidden;
+  min-width: 0;
+}
+.cs-jury img {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+  background: #EDE9FE;
+}
+.cs-jury h4 {
+  margin: 8px 10px 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.cs-jury p {
+  margin: 2px 10px 10px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--color-ink-soft);
+}
+.cs-footprint {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.cs-footprint p {
+  margin: 0;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(147,51,234,0.16);
+  background: rgba(147,51,234,0.05);
+}
+.cs-footprint b {
+  display: block;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+}
+.cs-footprint span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: rgba(10,10,10,0.5);
+}
+.cs-voices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.cs-bic-photos.cs-ic-media .cs-dual-col {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  display: block;
+}
+.cs-bic-photos .cs-dual-shot {
+  aspect-ratio: 4 / 3;
+  height: auto;
+}
+.cs-bic-page .cs-side-panel.is-sticky {
+  overflow: visible;
+  max-height: none;
+}
+.cs-bic-page .cs-ic-stat {
+  padding: 7px 8px 8px;
+}
+.cs-bic-page .cs-ic-stat b { font-size: 0.98rem; }
+.cs-bic-page .cs-ic-stat span { font-size: 9.5px; }
+@media (max-width: 900px) {
+  .cs-partners { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cs-jury { grid-template-columns: 1fr 1fr 1fr; }
+  .cs-footprint { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .cs-partners, .cs-jury { grid-template-columns: 1fr 1fr; }
+  .cs-bic-photos.cs-ic-media .cs-dual-col {
+    flex-basis: calc((100cqi - 6px) / 1.2);
+  }
+}
+
+.cs-expo-page .cs-flow {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.cs-expo-page .cs-side-panel.is-sticky {
+  overflow: visible;
+  max-height: none;
+}
+.cs-expo-page .cs-ic-stat {
+  padding: 7px 8px 8px;
+}
+.cs-expo-page .cs-ic-stat b { font-size: 0.98rem; }
+.cs-expo-page .cs-ic-stat span { font-size: 9.5px; }
+.cs-expo-shots {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+.cs-expo-shots figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+}
+.cs-expo-shots img {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+  display: block;
+  background: #EDE9FE;
+}
+.cs-expo-shots figcaption {
+  padding: 8px 10px 10px;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: var(--color-ink-soft);
+}
+.cs-expo-shots figure:nth-child(1) img,
+.cs-expo-shots figure:nth-child(4) img { height: 188px; }
+.cs-expo-note {
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-ink-soft);
+}
+.cs-expo-panel {
+  margin-top: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 22px -20px rgba(23,30,43,0.28);
+}
+.cs-expo-panel figure {
+  margin: 0;
+  background: #1A102E;
+}
+.cs-expo-panel img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.9 / 1;
+  object-fit: cover;
+  object-position: center 42%;
+  display: block;
+}
+.cs-expo-panel-copy {
+  padding: 14px 16px 16px;
+}
+.cs-expo-panel-copy h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  letter-spacing: -0.03em;
+}
+.cs-expo-panel-copy p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-ink-soft);
+}
+.cs-expo-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.cs-expo-names li {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(147,51,234,0.18);
+  background: rgba(147,51,234,0.06);
+  color: #4C1D95;
+}
+.cs-credits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+.cs-credits p {
+  margin: 0;
+  padding: 10px 12px 11px;
+  border-radius: 14px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+}
+.cs-credits b {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6D28D9;
+}
+.cs-credits span {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.cs-expo-photos.cs-ic-media .cs-dual-col {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  display: block;
+}
+.cs-expo-photos .cs-dual-shot {
+  aspect-ratio: 4 / 3;
+  height: auto;
+}
+.cs-expo-page .cs-ic-media .cs-reel {
+  flex: 0 0 min(220px, 42cqi);
+  max-width: 220px;
+}
+.cs-guest-feature img {
+  object-position: center 18%;
+}
+@media (max-width: 1100px) {
+  .cs-expo-page .cs-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cs-expo-page .cs-flow::before { display: none; }
+}
+@media (max-width: 760px) {
+  .cs-expo-page .cs-flow {
+    grid-template-columns: 1fr;
+  }
+  .cs-expo-page .cs-flow::before {
+    display: block;
+    left: 13px;
+    right: auto;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    height: auto;
+  }
+  .cs-expo-shots { grid-template-columns: 1fr; }
+  .cs-expo-shots img,
+  .cs-expo-shots figure:nth-child(1) img,
+  .cs-expo-shots figure:nth-child(4) img { height: 180px; }
+  .cs-credits { grid-template-columns: 1fr; }
+  .cs-expo-panel img { aspect-ratio: 2.2 / 1; }
+  .cs-expo-photos.cs-ic-media .cs-dual-col {
+    flex-basis: calc((100cqi - 6px) / 1.2);
+  }
+  .cs-expo-page .cs-ic-media .cs-reel {
+    flex-basis: calc((100cqi - 6px) / 1.35);
+    max-width: none;
+  }
+}
+
 </style>
 <style type="text/tailwindcss">
 /* =========================================================
@@ -1823,7 +2163,6 @@
   .case-grid-single { max-width: 420px; margin-inline: auto; }
 }
 .case-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -2001,19 +2340,9 @@
   color: rgba(10,10,10,0.42);
 }
 .case-card .case-body .btn {
-  position: relative;
-  z-index: 3;
   margin-top: 14px;
   width: fit-content;
   flex: 0 0 auto;
-}
-.case-card-full {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  min-height: 0;
-  color: inherit;
-  text-decoration: none;
 }
 
 /* Founder — symmetric split: copy + photo/trust */
@@ -2381,19 +2710,23 @@
     radial-gradient(ellipse 80% 70% at 50% 0%, rgba(147,51,234,0.42), transparent 55%),
     radial-gradient(ellipse 50% 45% at 90% 80%, rgba(37,99,235,0.28), transparent 50%),
     linear-gradient(165deg, #12081F 0%, #0B0B14 50%, #07070C 100%);
-  padding: 96px 0 28px;
+  padding: 96px 0 36px;
   color: #fff;
 }
 .cs-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 24px;
-  align-items: end;
+  gap: 28px;
+  align-items: center;
 }
 @media (max-width: 860px) {
   .cs-hero-grid { grid-template-columns: 1fr; }
 }
-.cs-hero-copy { min-width: 0; }
+.cs-hero-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
 .cs-hero-media {
   margin: 0;
   border-radius: 16px;
@@ -2418,7 +2751,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px 16px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .cs-back {
   display: inline-flex;
@@ -2458,7 +2791,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .cs-meta span {
   display: inline-flex;
@@ -2487,13 +2820,6 @@
   border-bottom: 1px solid rgba(10,10,10,0.06);
   padding: 0;
 }
-.cs-hero .cs-metrics {
-  background: transparent;
-  border: 0;
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
 .cs-metrics ul {
   list-style: none;
   margin: 0;
@@ -2502,31 +2828,12 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
 }
-@media (max-width: 800px) {
-  .cs-metrics ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 .cs-metrics li {
   padding: 14px 14px 15px;
   text-align: center;
   border-right: 1px solid rgba(10,10,10,0.06);
 }
-.cs-hero .cs-metrics li {
-  padding: 4px 12px 2px;
-  border-right: 1px solid rgba(255,255,255,0.1);
-  text-align: left;
-}
 .cs-metrics li:last-child { border-right: 0; }
-.cs-hero .cs-metrics li:last-child { border-right: 0; }
-@media (max-width: 800px) {
-  .cs-metrics li:nth-child(2n) { border-right: 0; }
-  .cs-metrics li:nth-child(n+3) { border-top: 1px solid rgba(10,10,10,0.06); }
-  .cs-hero .cs-metrics li:nth-child(2n) { border-right: 0; }
-  .cs-hero .cs-metrics li:nth-child(n+3) {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 12px;
-    margin-top: 8px;
-  }
-}
 .cs-metrics strong {
   display: block;
   font-family: var(--font-display);
@@ -2535,10 +2842,6 @@
   letter-spacing: -0.03em;
   line-height: 1;
   color: var(--color-ink);
-}
-.cs-hero .cs-metrics strong {
-  color: #fff;
-  font-size: clamp(1.15rem, 1rem + 0.55vw, 1.4rem);
 }
 .cs-metrics span {
   display: block;
@@ -2549,6 +2852,41 @@
   text-transform: uppercase;
   color: rgba(10,10,10,0.42);
 }
+.cs-hero .cs-metrics {
+  background: transparent;
+  border: 0;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  max-width: none;
+  width: 100%;
+}
+.cs-hero .cs-metrics ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+}
+.cs-hero .cs-metrics li {
+  padding: 0 10px;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  text-align: left;
+}
+.cs-hero .cs-metrics li:first-child { padding-left: 0; }
+.cs-hero .cs-metrics li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+@media (max-width: 800px) {
+  .cs-hero .cs-metrics ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 0; }
+  .cs-hero .cs-metrics li:nth-child(2n) { border-right: 0; }
+  .cs-hero .cs-metrics li:nth-child(n+3) {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 12px;
+  }
+}
+.cs-hero .cs-metrics strong {
+  color: #fff;
+  font-size: clamp(1.2rem, 1.05rem + 0.5vw, 1.45rem);
+}
 .cs-hero .cs-metrics span {
   margin-top: 5px;
   color: rgba(249,250,251,0.45);
@@ -2556,7 +2894,7 @@
 
 .cs-section {
   background: #fff;
-  padding: 28px 0;
+  padding: 48px 0 56px;
 }
 .cs-section.is-soft {
   background: #F9FAFB;
@@ -2567,6 +2905,26 @@
   background: #0E0E12;
   color: #fff;
   border: 0;
+}
+.cs-section-head {
+  margin: 0 0 24px;
+  max-width: 52ch;
+}
+.cs-section-head .badge { margin-bottom: 12px; }
+.cs-section-head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 1.15rem + 0.7vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--color-ink);
+}
+.cs-section-head p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
 }
 .cs-kicker {
   margin: 0 0 6px;
@@ -2721,20 +3079,20 @@
 /* Content stack + course-style sticky side panel */
 .cs-content-stack {
   display: grid;
-  gap: 14px;
+  gap: 16px;
   margin-top: 0;
 }
 .cs-block {
-  margin-top: 22px;
-  padding-top: 18px;
+  margin-top: 28px;
+  padding-top: 24px;
   border-top: 1px solid rgba(10,10,10,0.06);
 }
 .cs-block-head {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 .cs-block-head h3 {
   margin: 0;
@@ -2753,22 +3111,35 @@
 .cs-course-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(240px, 280px);
-  gap: 22px;
-  margin-top: 16px;
+  gap: 24px;
+  margin-top: 0;
   align-items: start;
 }
-@media (max-width: 900px) {
-  .cs-course-layout { grid-template-columns: 1fr; }
+@media (max-width: 1024px) {
+  .cs-course-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(200px, 228px);
+    gap: 16px;
+  }
 }
-.cs-main-col { min-width: 0; }
+@media (max-width: 900px) {
+  .cs-course-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(184px, 210px);
+    gap: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .cs-course-layout { grid-template-columns: 1fr; gap: 20px; }
+}
+.cs-main-col { min-width: 0; overflow-x: clip; }
 .cs-side-panel {
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid rgba(10,10,10,0.08);
   background: #F6F5F8;
-  padding: 14px 14px 16px;
+  padding: 18px 16px;
   display: flex;
   flex-direction: column;
   gap: 0;
+  min-width: 0;
 }
 .cs-side-panel.is-sticky {
   position: sticky;
@@ -2776,13 +3147,12 @@
   max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .cs-side-panel.is-sticky {
     position: static;
     max-height: none;
     overflow: visible;
   }
-  .cs-course-layout .cs-side-panel { order: -1; }
 }
 .cs-side-panel h3 {
   margin: 0;
@@ -2799,14 +3169,14 @@
   color: var(--color-ink-soft);
 }
 .cs-side-group {
-  padding: 12px 0;
+  padding: 14px 0;
   border-top: 1px solid rgba(10,10,10,0.08);
 }
 .cs-side-group:first-child {
   padding-top: 0;
   border-top: 0;
 }
-.cs-side-group h3 { margin-bottom: 8px; }
+.cs-side-group h3 { margin-bottom: 10px; }
 .cs-side-panel .cs-list {
   margin-top: 0;
   gap: 5px;
@@ -2823,6 +3193,8 @@
   padding: 4px 8px 4px 6px;
   font-size: 10.5px;
   background: #fff;
+  max-width: 100%;
+  white-space: normal;
 }
 .cs-side-panel .cs-channel svg {
   width: 12px;
@@ -2867,14 +3239,14 @@
 .cs-prose {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  gap: 12px;
 }
 @media (max-width: 800px) {
   .cs-prose { grid-template-columns: 1fr; }
 }
 .cs-prose article,
 .cs-brief-card {
-  padding: 14px 14px 15px;
+  padding: 16px 16px 18px;
   border-radius: 14px;
   border: 1px solid rgba(10,10,10,0.08);
   background: #fff;
@@ -2898,9 +3270,9 @@
 }
 
 .cs-role-dark {
-  margin-top: 18px;
+  margin-top: 24px;
   border-radius: 16px;
-  padding: 18px 16px 20px;
+  padding: 20px 18px 22px;
   background:
     radial-gradient(ellipse 70% 80% at 10% 0%, rgba(147,51,234,0.28), transparent 55%),
     linear-gradient(165deg, #14121A 0%, #0B0B10 100%);
@@ -2908,7 +3280,7 @@
   border: 1px solid rgba(255,255,255,0.08);
 }
 .cs-role-dark .cs-block-head {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .cs-role-dark .cs-block-head h3 { color: #fff; }
 .cs-role-dark .cs-block-head p { color: rgba(249,250,251,0.55); }
@@ -2936,11 +3308,8 @@
   color: #6D28D9;
 }
 
-.cs-side-role {
-  margin: 0;
-  font-size: 12.5px;
-  line-height: 1.45;
-  color: var(--color-ink-soft);
+.cs-side-group .cs-side-tags {
+  margin-top: 0;
 }
 
 .cs-side-facts {
@@ -3018,8 +3387,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .cs-dual-viewport {
   overflow: hidden;
@@ -3072,8 +3441,8 @@
 }
 
 /* Compact social / loop rails */
-.cs-social-block { margin-top: 12px; }
-.cs-social-block + .cs-social-block { margin-top: 14px; }
+.cs-social-block { margin-top: 18px; }
+.cs-social-block + .cs-social-block { margin-top: 18px; }
 .cs-social-block h3 {
   margin: 0;
   font-family: var(--font-display);
@@ -3089,8 +3458,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .cs-rail-viewport {
   overflow: hidden;
@@ -3261,8 +3630,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 .cs-speakers {
   margin-top: 0;
@@ -3377,30 +3746,52 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Related case studies — tighter cards */
-.cs-related-actions {
-  margin-top: 14px;
-  display: flex;
-  justify-content: center;
+/* Related case studies — dark band, same cards as listing */
+.cs-related {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(147,51,234,0.22), transparent 55%),
+    radial-gradient(ellipse 45% 40% at 90% 80%, rgba(37,99,235,0.14), transparent 50%),
+    #0E0E12;
+  padding: 48px 0 56px;
+  color: #fff;
+  border: 0;
 }
-.cs-related-grid .case-card[hidden] {
+.cs-related .sec-center {
+  margin-bottom: 8px;
+}
+.cs-related .sec-center h2 {
+  color: #fff;
+}
+.cs-related .sec-center p {
+  color: rgba(249,250,251,0.55);
+}
+.cs-related-actions {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cs-related .case-body .btn-ghost-light {
+  border-color: rgba(10,10,10,0.1);
+  background: #fff;
+  color: var(--color-ink);
+}
+.cs-related .case-grid {
+  margin-top: 28px;
+}
+.cs-related .case-card[hidden] {
   display: none !important;
 }
-.cs-related-grid {
-  gap: 12px !important;
+.cs-role-dark .cs-block-head h3 {
+  margin: 0;
+  font-size: clamp(1.05rem, 0.95rem + 0.35vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #fff;
 }
-.cs-related-grid .case-media {
-  aspect-ratio: 16 / 9;
-}
-.cs-related-grid .case-body {
-  padding: 12px 12px 14px;
-}
-.cs-related-grid .case-sub {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+.cs-role-dark .badge { width: fit-content; }
 
 /* Contact channel buttons */
 .cta-channels {
@@ -3441,29 +3832,602 @@
 .cta-channel.is-mail:hover { border-color: rgba(147,51,234,0.55); background: rgba(147,51,234,0.18); }
 .cta-channel.is-wa:hover { border-color: rgba(37,211,102,0.55); background: rgba(37,211,102,0.16); }
 
+/* Case study page — align shared bands to the same vertical rhythm */
+body[data-page="work"] .testimonials-section {
+  padding: 48px 0 56px;
+}
+body[data-page="work"] .testimonials-section .testi-track-wrap {
+  margin-top: 24px;
+}
+body[data-page="work"] .cta-band {
+  padding: 48px 0 56px;
+}
+
+.cs-hero > .hero-media { z-index: 0; }
+.cs-hero > .shell { position: relative; z-index: 2; }
+.cs-hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.cs-hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.cs-hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8,6,16,0.58) 0%, rgba(8,6,16,0.72) 42%, rgba(8,6,16,0.88) 100%),
+    linear-gradient(90deg, rgba(18,8,31,0.5), rgba(18,8,31,0.18) 70%);
+}
+.cs-side-panel.is-sticky {
+  top: 76px;
+  max-height: calc(100vh - 92px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 12px 10px 10px;
+}
+.cs-side-panel .cs-side-group + .cs-side-group {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.cs-ic-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 8px;
+}
+.cs-ic-stat {
+  margin: 0;
+  padding: 8px 8px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 22px -20px rgba(23,30,43,0.28);
+  min-width: 0;
+}
+.cs-ic-stat-wide {
+  grid-column: 1 / -1;
+}
+.cs-ic-stat b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  line-height: 1.1;
+}
+.cs-ic-stat span {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: rgba(10,10,10,0.48);
+  overflow-wrap: break-word;
+}
+.cs-ic-note {
+  margin: 8px 0 0;
+  font-size: 10px;
+  line-height: 1.35;
+  color: rgba(10,10,10,0.42);
+}
+
+#cs-people {
+  container-type: inline-size;
+}
+#cs-people .cs-speaker {
+  width: calc((100cqi - 32px) / 5);
+  max-width: 152px;
+}
+#cs-people .cs-speaker-body {
+  min-width: 0;
+  padding: 8px 9px 10px;
+}
+#cs-people .cs-speaker-body h3,
+#cs-people .cs-speaker-role {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#cs-people .cs-socials a {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+}
+#cs-people .cs-socials a svg { flex: 0 0 auto; }
+#cs-people .cs-socials a .n { margin-left: auto; flex: 0 0 auto; }
+@media (max-width: 720px) {
+  #cs-people .cs-speaker { width: calc((100cqi - 8px) / 2.15); max-width: none; }
+}
+
+.cs-happened-band {
+  margin-top: 18px;
+  padding: 18px 16px 16px;
+}
+.cs-happened-band .cs-block-head { margin-bottom: 12px; }
+.cs-happened-band .cs-block-head h3 {
+  color: #fff;
+  font-size: 1.02rem;
+}
+.cs-flow {
+  list-style: none;
+  margin: 0;
+  padding: 2px 0 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px 10px;
+  position: relative;
+}
+.cs-flow::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 14px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(168,85,247,0.75), rgba(37,99,235,0.75));
+  opacity: 0.55;
+}
+.cs-flow li {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+.cs-flow li span {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #9333EA, #2563EB);
+  box-shadow: 0 0 0 4px rgba(147,51,234,0.18);
+}
+.cs-flow h4 {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.cs-flow p {
+  margin: 4px 0 0;
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: rgba(249,250,251,0.62);
+}
+@media (max-width: 760px) {
+  .cs-flow {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .cs-flow::before {
+    left: 13px;
+    right: auto;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    height: auto;
+  }
+  .cs-flow li {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 0 12px;
+    align-items: start;
+  }
+  .cs-flow li span { grid-row: 1 / span 2; }
+  .cs-flow h4 { margin-top: 2px; }
+}
+
+.cs-guest-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 0;
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #fff;
+  box-shadow: 0 10px 24px -22px rgba(23,30,43,0.28);
+}
+@media (max-width: 760px) {
+  .cs-guest-feature { grid-template-columns: 1fr; }
+}
+.cs-guest-feature figure {
+  margin: 0;
+  min-height: 260px;
+  background: #1A102E;
+  overflow: hidden;
+}
+.cs-guest-feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  aspect-ratio: 16 / 10;
+}
+.cs-guest-copy {
+  padding: 22px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+.cs-guest-copy .badge { margin-bottom: 10px; }
+.cs-guest-copy h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+.cs-guest-role {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-violet);
+}
+.cs-guest-copy p {
+  margin: 10px 0 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+}
+.cs-guest-ig {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(147,51,234,0.22);
+  background: rgba(147,51,234,0.06);
+  color: #6D28D9;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+.cs-guest-ig svg { width: 12px; height: 12px; fill: currentColor; }
+.cs-guest-ig span {
+  color: rgba(17,24,39,0.48);
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-ic-media { container-type: inline-size; }
+.cs-ic-media .cs-dual-viewport,
+.cs-ic-media .cs-rail-viewport { overflow: hidden; }
+.cs-ic-media .cs-dual-col {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+}
+.cs-ic-media .cs-post {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  background: #EDE9FE;
+}
+.cs-ic-media .cs-reel {
+  flex: 0 0 calc((100cqi - 24px) / 5);
+  max-width: 168px;
+  background: #EDE9FE;
+}
+.cs-ic-media .cs-dual-shot { background: #EDE9FE; position: relative; }
+.cs-ic-media .cs-dual-shot figcaption { z-index: 1; pointer-events: none; }
+
+.cs-ic-media .cs-dual-shot a { display:block; position:absolute; inset:0; }
+.cs-ic-media .cs-dual-shot a img { width:100%; height:100%; object-fit:cover; }
+
+.cs-ic-media .cs-post-overlay {
+  background: linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.62));
+}
+@media (max-width: 720px) {
+  .cs-ic-media .cs-dual-col { flex-basis: calc((100cqi - 6px) / 2.2); }
+  .cs-ic-media .cs-post { flex-basis: calc((100cqi - 6px) / 2.2); }
+  .cs-ic-media .cs-reel { flex-basis: calc((100cqi - 6px) / 2.2); max-width: none; }
+}
+
+@media (max-width: 640px) {
+  .cs-side-panel.is-sticky {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body data-page="work" class="overflow-x-hidden bg-cream font-sans text-md text-ink antialiased selection:bg-violet selection:text-white">
+<body data-page="work" class="cs-bic-page cs-expo-page overflow-x-hidden bg-cream font-sans text-md text-ink antialiased selection:bg-violet selection:text-white">
 <div id="site-nav"></div>
 
-<header class="case-hero">
-  <div class="shell case-hero-inner">
-    <div class="case-hero-copy">
-      <p class="case-hero-kicker">Case Studies</p>
-      <h1>Selected work.</h1>
+<header class="cs-hero">
+  <div class="cs-hero-photo" aria-hidden="true">
+    <img src="../assets/edu-expo/hero.jpg" alt="" width="1600" height="900">
+  </div>
+  <div class="shell">
+    <div class="cs-hero-top">
+      <a class="cs-back" href="./index.html"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg> All case studies</a>
     </div>
-    <p>Programmes and platforms built with partners across India.</p>
+    <div class="cs-hero-grid">
+      <div class="cs-hero-copy">
+        <h1>Education Expo 2025</h1>
+        <p class="cs-lead">Nearly 600 students. 20+ institutes. One room full of next steps.</p>
+        <div class="cs-meta" aria-label="Project details">
+          <span><em>Date</em>9 March 2025</span>
+          <span><em>Venue</em>Eros Hotel, Nehru Place, New Delhi</span>
+          <span><em>Lead</em>Daksh Sethi, Guby Rogers</span>
+          <span><em>Type</em>Education Expo</span>
+        </div>
+      </div>
+      <figure class="cs-hero-media">
+        <img src="../assets/edu-expo/hero-panel.jpg" alt="Students arriving at Education Expo 2025 and gathering around admissions desks" width="1200" height="800" decoding="async">
+      </figure>
+    </div>
   </div>
 </header>
 
-<section class="case-studies-section" aria-label="Case study grid">
+<section class="cs-section">
   <div class="shell">
+    <div class="cs-section-head">
+      <span class="badge badge-violet"><span class="badge-dot"></span>Case study</span>
+      <h2>A postgraduate marketplace, in one room.</h2>
+      <p>Students exploring what comes after graduation met institutes, admissions desks and people already in the work.</p>
+    </div>
+
+    <div class="cs-course-layout">
+      <div class="cs-main-col">
+        <div id="cs-brief" class="cs-prose">
+          <article class="cs-brief-card">
+            <h3>Brief</h3>
+            <p>Choosing what comes after graduation can feel abstract. Education Expo made it direct. Students met institutions face-to-face, compared postgraduate paths, asked about scholarships and heard from people building careers across business, technology and beyond.</p>
+          </article>
+          <article class="cs-brief-card">
+            <h3>Agenda</h3>
+            <p>Bring an engaged Delhi-NCR student audience into one room. Make admissions guidance personal. Give institutions, creators and business leaders a useful part in the conversation.</p>
+          </article>
+          <article class="cs-brief-card">
+            <h3>Vision</h3>
+            <p>Turn an education fair into a decisive day of conversations, choices and momentum.</p>
+          </article>
+        </div>
+
+        <div class="cs-story">
+        <div id="cs-happened" class="cs-role-dark cs-happened-band">
+          <div class="cs-block-head">
+            <div>
+              <span class="badge badge-dark mb-3"><span class="badge-dot"></span>What Happened</span>
+              <h3>From the invitation to the story that travelled.</h3>
+            </div>
+          </div>
+          <ol class="cs-flow">
+            <li><span aria-hidden="true">1</span><div><h4>The invitation</h4><p>Student outreach and media promotion brought the postgraduate conversation across Delhi-NCR.</p></div></li>
+            <li><span aria-hidden="true">2</span><div><h4>The room fills</h4><p>Students arrived at Eros Hotel to explore what could come after graduation.</p></div></li>
+            <li><span aria-hidden="true">3</span><div><h4>The choices become real</h4><p>Institute booths put programmes, admissions questions and scholarship opportunities in direct conversation.</p></div></li>
+            <li><span aria-hidden="true">4</span><div><h4>The stage opens up</h4><p>Career and business panels connected students with creators, founders and industry voices.</p></div></li>
+            <li><span aria-hidden="true">5</span><div><h4>The people meet</h4><p>One-to-one counselling, student interactions and a Special Guest of Honour gave the day its human energy.</p></div></li>
+            <li><span aria-hidden="true">6</span><div><h4>The story travels</h4><p>Times of India coverage, creator posts, a recap carousel and a recap Reel carried the event beyond the venue.</p></div></li>
+          </ol>
+        </div>
+
+        <div id="cs-admissions" class="cs-block">
+          <div class="cs-block-head">
+            <div>
+              <h3>Admissions on the floor</h3>
+              <p>Booths, brochures and seated counselling made postgraduate options something students could walk up to.</p>
+            </div>
+          </div>
+          <div class="cs-expo-shots">
+            <figure>
+              <img src="../assets/edu-expo/admissions-01.jpg" alt="Students gathered around an institute table reviewing forms and programme folders" width="1200" height="800" loading="lazy" decoding="async">
+              <figcaption>Students reviewing programme folders at an institute table.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/edu-expo/admissions-02.jpg" alt="A seated one-to-one conversation between students and an admissions representative" width="1200" height="800" loading="lazy" decoding="async">
+              <figcaption>Seated one-to-one admissions counselling.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/edu-expo/admissions-03.jpg" alt="Students leaning over brochures while representatives take notes at a branded counter" width="1200" height="800" loading="lazy" decoding="async">
+              <figcaption>Brochures, forms and a busy branded counter.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/edu-expo/admissions-04.jpg" alt="Students seated with institute representatives among exhibition tables in the hotel ballroom" width="1200" height="800" loading="lazy" decoding="async">
+              <figcaption>Institute booths across the exhibition floor.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/edu-expo/admissions-05.jpg" alt="Students in conversation with representatives in front of postgraduate business programme standees" width="1200" height="800" loading="lazy" decoding="async">
+              <figcaption>Postgraduate programme guidance at the desk.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/edu-expo/admissions-06.jpg" alt="Student groups moving through a crowded exhibition hall with brochures in hand" width="1200" height="800" loading="lazy" decoding="async">
+              <figcaption>Student groups moving through the hall.</figcaption>
+            </figure>
+          </div>
+          <p class="cs-expo-note">Names clearly readable in the available photographs include RIT and Quantum University. A full exhibitor list is not published here.</p>
+        </div>
+
+        <div id="cs-panels" class="cs-block">
+          <div class="cs-block-head">
+            <div>
+              <h3>Two panel conversations</h3>
+              <p>The stage put career and business questions in front of the room. Names below match the LED screens in the photographs.</p>
+            </div>
+          </div>
+          <article class="cs-expo-panel">
+            <figure>
+              <img src="../assets/edu-expo/panel-career.jpg" alt="Career Growth and Opportunities panel with Riya Gadhwal, Rashmi Kothari and Richa Shailesh" width="1400" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="cs-expo-panel-copy">
+              <h4>Career Growth &amp; Opportunities</h4>
+              <p>Career decisions met honest conversations about growth, opportunity and the workplace.</p>
+              <ul class="cs-expo-names">
+                <li>Riya Gadhwal</li>
+                <li>Rashmi Kothari</li>
+                <li>Richa Shailesh</li>
+              </ul>
+            </div>
+          </article>
+          <article class="cs-expo-panel">
+            <figure>
+              <img src="../assets/edu-expo/panel-business.jpg" alt="Career in the Field of Business panel with Yash Verma, Bharat Bansal and Siddharth Ralli" width="1400" height="400" loading="lazy" decoding="async">
+            </figure>
+            <div class="cs-expo-panel-copy">
+              <h4>Career in the Field of Business</h4>
+              <p>Business moved from theory to direct questions about building, trading and entrepreneurship.</p>
+              <ul class="cs-expo-names">
+                <li>Yash Verma</li>
+                <li>Siddharth Ralli</li>
+                <li>Bharat Bansal</li>
+              </ul>
+            </div>
+          </article>
+          <p class="cs-expo-note">Other named voices on the day, verified on stage and in the recap captions, included Ashutosh Singh, Raj Choudhary, Amresh Bharati, Yukti Gaur and Priya Vajpeyi. Each session had its own brief. Not every speaker covered every topic.</p>
+        </div>
+
+        <article class="cs-guest-feature" id="cs-guest">
+          <figure>
+            <img src="../assets/edu-expo/guest.jpg" alt="Dr. Sanjeen Sawhney, Special Guest of Honour, at Education Expo 2025" width="800" height="1000" decoding="async">
+          </figure>
+          <div class="cs-guest-copy">
+            <span class="badge badge-violet"><span class="badge-dot"></span>Special Guest of Honour</span>
+            <h3>A different kind of career conversation.</h3>
+            <div class="cs-guest-role">Dr. Sanjeen Sawhney</div>
+            <p>Dr. Sanjeen Sawhney joined the Expo for an interaction that widened the conversation beyond admissions and into ambition, business and the choices ahead.</p>
+          </div>
+        </article>
+
+        <div id="cs-people" class="cs-block">
+          <div class="cs-block-head">
+            <div>
+              <h3>People and credits</h3>
+              <p>Daksh Sethi led the concept through Guby Rogers. The day was built with a media partner, hosts and an organising team, not a single closed shop.</p>
+            </div>
+          </div>
+          <div class="cs-credits">
+            <p><b>Concept and leadership</b><span>Daksh Sethi, Guby Rogers</span></p>
+            <p><b>Official media partner</b><span>Times of India</span></p>
+            <p><b>Organising team</b><span>Vaishnavi Asrani, with Himanshu Yadav, Aditi Goel and Eklavya Singh</span></p>
+            <p><b>Hosts</b><span>Kavi Dheerendra Singh and Saloni Karn</span></p>
+            <p><b>On-ground execution</b><span>180 Degrees Consulting, ARSD</span></p>
+            <p><b>Project support</b><span>Neety Prasad</span></p>
+            <p><b>Collaborators</b><span>Education Dreams and Vimlesh Pandey</span></p>
+          </div>
+        </div>
+
+        <div id="cs-media" class="cs-block cs-ic-media cs-expo-photos">
+          <div class="cs-dual-gallery" data-dual-gallery>
+            <div class="cs-block-head">
+              <div>
+                <h3>Photos</h3>
+                <p>The hall, the desks and the people in the room.</p>
+              </div>
+              <div class="cs-gallery-nav">
+                <button type="button" data-gallery-prev aria-label="Previous photos"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <button type="button" data-gallery-next aria-label="Next photos"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+              </div>
+            </div>
+            <div class="cs-dual-viewport">
+              <div class="cs-dual-track" data-dual-track>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-01-hall.jpg" alt="Students filling the Education Expo hall at Eros Hotel" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>The hall fills</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-02-floor.jpg" alt="Students and representatives talking across the exhibition floor" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Exhibition floor</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-03-wall.jpg" alt="Students posing at the Times of India and partner backdrop" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Partner wall</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-04-stage.jpg" alt="Group photograph on the Education Expo stage" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>On the stage</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-05-students.jpg" alt="Daksh Sethi with students on the exhibition floor" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>With students</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-06-friends.jpg" alt="Students talking together during the Expo" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>In conversation</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-07-tulas.jpg" alt="Students holding brochures in front of an institute banner" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>Programme brochures</figcaption></figure></div>
+                <div class="cs-dual-col"><figure class="cs-dual-shot"><a href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/photo-08-brochures.jpg" alt="Students reviewing a programme booklet with an admissions representative" width="400" height="300" loading="lazy" decoding="async"></a><figcaption>One-to-one guidance</figcaption></figure></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-social-block cs-rail" data-loop-rail data-loop-item=".cs-post" data-loop-interval="3400">
+            <div class="cs-rail-head">
+              <h3>Posts and media coverage</h3>
+              <div class="cs-gallery-nav">
+                <button type="button" data-loop-prev aria-label="Previous posts"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <button type="button" data-loop-next aria-label="Next posts"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+              </div>
+            </div>
+            <div class="cs-rail-viewport">
+              <div class="cs-posts cs-rail-track" data-loop-track>
+                <a class="cs-post" href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/post-01-toi.jpg" alt="Times of India carousel: students at the partner wall" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Times of India</em>Students at the partner wall</span></a>
+                <a class="cs-post" href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/post-02-toi.jpg" alt="Times of India carousel: the crowded hall and counselling tables" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Times of India</em>The hall and the desks</span></a>
+                <a class="cs-post" href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/post-03-toi.jpg" alt="Times of India carousel: one-to-one admissions counselling" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Times of India</em>Admissions counselling</span></a>
+                <a class="cs-post" href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/post-04-toi.jpg" alt="Times of India carousel: panel discussions on stage" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Times of India</em>Panels on stage</span></a>
+                <a class="cs-post" href="https://www.instagram.com/p/DHEEVSUMqOd/" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/post-05-toi.jpg" alt="Times of India carousel: group photographs on the Expo stage" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Times of India</em>The room, together</span></a>
+                <a class="cs-post" href="https://www.linkedin.com/posts/education-dreamscoin_educationexpo2025-careerguidance-futureready-activity-7308018343540662272-zaDA" target="_blank" rel="noopener noreferrer"><img src="../assets/edu-expo/post-06-edreams.jpg" alt="Education Dreams recap photograph of the organising team on the Expo stage" width="400" height="400" loading="lazy" decoding="async"><span class="cs-post-overlay"><em>Education Dreams</em>Team on the stage</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-social-block cs-rail">
+            <div class="cs-rail-head">
+              <h3>Reel</h3>
+            </div>
+            <div class="cs-rail-viewport">
+              <div class="cs-reels cs-rail-track">
+                <a class="cs-reel" href="https://www.instagram.com/reel/DHFeNsLzHev/" target="_blank" rel="noopener noreferrer">
+                  <img src="../assets/edu-expo/reel-still.jpg" alt="Education Expo 2025 recap Reel still from the stage" width="360" height="640" loading="lazy" decoding="async">
+                  <span class="cs-reel-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                  <span class="cs-reel-label">Event recap</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <aside class="cs-side-panel is-sticky" aria-label="Role and outcomes">
+        <div class="cs-side-group">
+          <h3>Our Role</h3>
+          <p>Daksh Sethi, through Guby Rogers, conceived and led Education Expo 2025. Times of India was the official media partner. The day was delivered with Education Dreams, an organising team and on-ground collaborators.</p>
+          <div class="cs-channels">
+            <span class="cs-channel">Event concept and leadership</span>
+            <span class="cs-channel">Student mobilisation</span>
+            <span class="cs-channel">Institution and admissions integration</span>
+            <span class="cs-channel">Programme and panel curation</span>
+            <span class="cs-channel">Media partnership integration</span>
+            <span class="cs-channel">On-ground coordination</span>
+          </div>
+        </div>
+        <div class="cs-side-group">
+          <h3>Outcomes</h3>
+          <div class="cs-ic-stats">
+            <p class="cs-ic-stat"><b>Close to 600</b><span>Students from across Delhi-NCR</span></p>
+            <p class="cs-ic-stat"><b>20+</b><span>Participating institutes</span></p>
+            <p class="cs-ic-stat"><b>13</b><span>Creators and business leaders</span></p>
+            <p class="cs-ic-stat"><b>50 lakh+</b><span>Social media impressions</span></p>
+          </div>
+          <p class="cs-ic-note">Institute, speaker and impression figures reported in the event document.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="cs-related" data-related aria-label="Other case studies">
+  <div class="shell">
+    <div class="sec-center">
+      <span class="badge badge-dark mb-4"><span class="badge-dot"></span>Case Studies</span>
+      <h2 class="font-display text-3xl font-bold text-white">Other case studies.</h2>
+      <p class="mt-3 max-w-none text-sm">More programmes from the same practice.</p>
+    </div>
     <div class="case-grid">
 
-      <article class="case-card">
-        <a class="case-card-full" href="./instaconfluence.html">
-        <div class="case-media" aria-hidden="true">
+      <article class="case-card" data-related-item>
+        <div class="case-media">
           <img src="../assets/instaconfluence/hero.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
           <span class="case-badge"><i></i>Creator Summit</span>
           <div class="case-media-foot">
@@ -3474,18 +4438,27 @@
         <div class="case-body">
           <h2>InstaConfluence</h2>
           <p class="case-sub">18 creators. One campus. Stories that travelled far beyond the stage.</p>
-          <ul class="case-stats">
-            <li><strong>18</strong><span>Creators</span></li>
-            <li><strong>20</strong><span>Reels</span></li>
-            <li><strong>2024</strong><span>Year</span></li>
-          </ul>
-          <span class="btn btn-violet btn-sm">View Case Study →</span>
+          <ul class="case-stats"><li><strong>18</strong><span>Creators</span></li><li><strong>20</strong><span>Reels</span></li><li><strong>2024</strong><span>Year</span></li></ul>
+          <a href="./instaconfluence.html" class="btn btn-violet btn-sm">View Case Study →</a>
         </div>
-        </a>
       </article>
-
-      <article class="case-card">
-        <a class="case-card-full" href="./lpu-cse-kuala-lumpur.html">
+      <article class="case-card" data-related-item>
+        <div class="case-media">
+          <img src="../assets/bic-s1/card.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
+          <span class="case-badge"><i></i>Season 1</span>
+          <div class="case-media-foot">
+            <div class="case-mark">BIC<em>Season 1</em></div>
+            <div class="case-feat"><b>2,600+</b><span>Teams</span></div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h2>Bharat Innovation Challenge, Season 1</h2>
+          <p class="case-sub">2,600+ teams. 28 states. One national stage for new ideas.</p>
+          <ul class="case-stats"><li><strong>2,600+</strong><span>Teams</span></li><li><strong>28</strong><span>States</span></li><li><strong>60+</strong><span>Prototypes</span></li></ul>
+          <a href="./bic.html" class="btn btn-violet btn-sm">View Case Study →</a>
+        </div>
+      </article>
+      <article class="case-card" data-related-item>
         <div class="case-media">
           <img src="../assets/kl-immersion/card.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
           <span class="case-badge"><i></i>Global Immersion</span>
@@ -3497,163 +4470,38 @@
         <div class="case-body">
           <h2>LPU CSE Global Immersion, Kuala Lumpur</h2>
           <p class="case-sub">Five days. Twelve passports. A wider world of possibility.</p>
-          <ul class="case-stats">
-            <li><strong>5</strong><span>Days</span></li>
-            <li><strong>12</strong><span>Passports</span></li>
-            <li><strong>2026</strong><span>Year</span></li>
-          </ul>
-          <span class="btn btn-violet btn-sm">View Case Study →</span>
+          <ul class="case-stats"><li><strong>5</strong><span>Days</span></li><li><strong>12</strong><span>Passports</span></li><li><strong>2026</strong><span>Year</span></li></ul>
+          <a href="./lpu-cse-kuala-lumpur.html" class="btn btn-violet btn-sm">View Case Study →</a>
         </div>
-        </a>
-      </article>
-
-      <article class="case-card">
-        <a class="case-card-full" href="./lpu-dubai-immersion.html">
-        <div class="case-media">
-          <img src="../assets/dubai-immersion/card.jpg" alt="" width="640" height="300" style="width:100%;height:100%;object-fit:cover;">
-          <span class="case-badge"><i></i>Global Immersion</span>
-          <div class="case-media-foot">
-            <div class="case-mark">Dubai<em>2025</em></div>
-            <div class="case-feat"><b>2</b><span>Streams</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h2>LPU Global Immersion, Dubai</h2>
-          <p class="case-sub">A business education you could walk into.</p>
-          <ul class="case-stats">
-            <li><strong>BBA</strong><span>Stream</span></li>
-            <li><strong>BCom</strong><span>Stream</span></li>
-            <li><strong>2025</strong><span>Year</span></li>
-          </ul>
-          <span class="btn btn-violet btn-sm">View Case Study →</span>
-        </div>
-        </a>
-      </article>
-
-      <article class="case-card">
-        <div class="case-media" aria-hidden="true">
-          <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <linearGradient id="cs-uni" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0B1220"/><stop offset="100%" stop-color="#7C3AED"/></linearGradient>
-              <linearGradient id="cs-uni-line" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C4B5FD" stop-opacity="0"/><stop offset="50%" stop-color="#C4B5FD" stop-opacity="0.55"/><stop offset="100%" stop-color="#C4B5FD" stop-opacity="0"/></linearGradient>
-            </defs>
-            <rect width="640" height="300" fill="url(#cs-uni)"/>
-            <circle cx="500" cy="250" r="100" fill="#60A5FA" opacity="0.18"/>
-            <circle cx="120" cy="40" r="70" fill="#A855F7" opacity="0.16"/>
-            <path d="M40 210 H280" stroke="url(#cs-uni-line)" stroke-width="1.5"/>
-            <g fill="none" stroke="#fff" stroke-opacity="0.2" stroke-width="1.4">
-              <path d="M430 88h50l-8 18H438z"/>
-              <rect x="438" y="106" width="34" height="28" rx="3"/>
-              <path d="M510 80v54M494 96h32"/>
-              <circle cx="560" cy="150" r="16"/>
-              <path d="M552 150h16"/>
-            </g>
-          </svg>
-          <span class="case-badge"><i></i>Higher Ed</span>
-          <div class="case-media-foot">
-            <div class="case-mark">University<em>Transformation</em></div>
-            <div class="case-feat"><b>Scale</b><span>Focus</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h2>University Transformation</h2>
-          <p class="case-sub">Institutional strategy and programme design with university partners — owned end to end.</p>
-          <ul class="case-stats">
-            <li><strong>Partners</strong><span>Focus</span></li>
-            <li><strong>Growth</strong><span>Brief</span></li>
-            <li><strong>E2E</strong><span>Model</span></li>
-          </ul>
-          <a href="./university-transformation.html" class="btn btn-violet btn-sm">View Case Study →</a>
-        </div>
-      </article>
-
-      <article class="case-card">
-        <div class="case-media" aria-hidden="true">
-          <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <linearGradient id="cs-eil" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1A0B2E"/><stop offset="100%" stop-color="#9333EA"/></linearGradient>
-            </defs>
-            <rect width="640" height="300" fill="url(#cs-eil)"/>
-            <circle cx="520" cy="40" r="100" fill="#F472B6" opacity="0.16"/>
-            <circle cx="80" cy="220" r="70" fill="#60A5FA" opacity="0.16"/>
-          </svg>
-          <span class="case-badge"><i></i>Conference</span>
-          <div class="case-media-foot">
-            <div class="case-mark">EIL<em>Conference</em></div>
-            <div class="case-feat"><b>Pan India</b><span>Reach</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h2>EIL Conference</h2>
-          <p class="case-sub">A national summit for education leaders — designed as a working platform, not a calendar event.</p>
-          <ul class="case-stats">
-            <li><strong>2025–26</strong><span>Year</span></li>
-            <li><strong>Strategy</strong><span>Role</span></li>
-            <li><strong>Leaders</strong><span>Audience</span></li>
-          </ul>
-          <a href="./eil.html" class="btn btn-violet btn-sm">View Case Study →</a>
-        </div>
-      </article>
-
-      <article class="case-card">
-        <a class="case-card-full" href="./bic.html">
-        <div class="case-media">
-          <img src="../assets/bic-s1/card.jpg" alt="Season 1 grand finale of Bharat Innovation Challenge at Lovely Professional University" width="640" height="300" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;">
-          <span class="case-badge"><i></i>Season 1</span>
-          <div class="case-media-foot">
-            <div class="case-mark">BIC<em>Season 1</em></div>
-            <div class="case-feat"><b>2,600+</b><span>Teams</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h2>Bharat Innovation Challenge, Season 1</h2>
-          <p class="case-sub">2,600+ teams. 28 states. One national stage for new ideas.</p>
-          <ul class="case-stats">
-            <li><strong>2,600+</strong><span>Teams</span></li>
-            <li><strong>28</strong><span>States</span></li>
-            <li><strong>60+</strong><span>Prototypes</span></li>
-          </ul>
-          <span class="btn btn-violet btn-sm">View Case Study →</span>
-        </div>
-        </a>
-      </article>
-
-      <article class="case-card">
-        <a class="case-card-full" href="./education-expo-2025.html">
-        <div class="case-media">
-          <img src="../assets/edu-expo/card.jpg" alt="Students filling the Education Expo 2025 hall at Eros Hotel, New Delhi" width="640" height="300" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;">
-          <span class="case-badge"><i></i>Education Expo</span>
-          <div class="case-media-foot">
-            <div class="case-mark">Education<em>Expo 2025</em></div>
-            <div class="case-feat"><b>Close to 600</b><span>Students</span></div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h2>Education Expo 2025</h2>
-          <p class="case-sub">Nearly 600 students. 20+ institutes. One room full of next steps.</p>
-          <ul class="case-stats">
-            <li><strong>Close to 600</strong><span>Students</span></li>
-            <li><strong>20+</strong><span>Institutes</span></li>
-            <li><strong>9 March 2025</strong><span>Eros Hotel</span></li>
-          </ul>
-          <span class="btn btn-violet btn-sm">View Case Study →</span>
-        </div>
-        </a>
       </article>
 
     </div>
+    <div class="cs-related-actions">
+      <a href="./index.html" class="btn btn-ghost-dark btn-sm">All Case Studies →</a>
+    </div>
   </div>
 </section>
+
 
 <section id="contact" class="cta-band scroll-mt-[72px]">
   <div class="shell">
     <div class="cta-panel">
       <span class="badge badge-dark"><span class="badge-dot"></span>Start a conversation</span>
       <h2>Have a programme worth building?</h2>
-      <p>Tell us about the platform, partnership or institutional challenge you want to take forward.</p>
-      <div class="cta-actions">
-        <a href="../contact.html" class="btn btn-violet btn-sm">Start a Conversation →</a>
-        <a href="../what-we-do/index.html" class="btn btn-ghost-dark btn-sm">Explore What We Do</a>
+      <p>Reach us on Instagram, email or WhatsApp.</p>
+      <div class="cta-channels">
+        <a class="cta-channel is-ig" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm6.1-.9a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1z"/></svg>
+          Instagram
+        </a>
+        <a class="cta-channel is-mail" href="mailto:hello@gubyrogers.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2 9 7 9-7"/></svg>
+          Email
+        </a>
+        <a class="cta-channel is-wa" href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 0 1 6.9 12.2l-.3.48.2 1.2-1.15.24-.46.3a8.1 8.1 0 0 1-11.6-7.1 8.1 8.1 0 0 1 6.41-7.32z"/></svg>
+          WhatsApp
+        </a>
       </div>
     </div>
   </div>
